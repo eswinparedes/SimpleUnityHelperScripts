@@ -3,70 +3,75 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StateTypeBinder : IStateTypeBinder
+namespace SUHScripts
 {
-    Func<Type, (IRegistry<IState> registry, IState aggregateState)> m_registryFunc;
-    Dictionary<Type, (IRegistry<IState> registry, IState aggregateState)> m_stateMap = new Dictionary<Type, (IRegistry<IState> registry, IState aggregateState)>();
-    HashSet<Type> m_closedRegistries = new HashSet<Type>();
-    IDisposable empty = InterfaceUtils.Disposable(() => { });
 
-    public void SetRegistryOpen<T>(bool isOpen)
+    public class StateTypeBinder : IStateTypeBinder
     {
-        var t = typeof(T);
+        Func<Type, (IRegistry<IState> registry, IState aggregateState)> m_registryFunc;
+        Dictionary<Type, (IRegistry<IState> registry, IState aggregateState)> m_stateMap = new Dictionary<Type, (IRegistry<IState> registry, IState aggregateState)>();
+        HashSet<Type> m_closedRegistries = new HashSet<Type>();
+        IDisposable empty = InterfaceUtils.Disposable(() => { });
 
-        if (isOpen)
+        public void SetRegistryOpen<T>(bool isOpen)
         {
-            m_closedRegistries.Remove(t);
+            var t = typeof(T);
+
+            if (isOpen)
+            {
+                m_closedRegistries.Remove(t);
+            }
+            {
+                m_closedRegistries.Add(t);
+            }
         }
+
+        public void OpenAllRegistries()
         {
-            m_closedRegistries.Add(t);
+            m_closedRegistries.Clear();
+        }
+
+        public void CloseAllRegistries()
+        {
+            foreach (var key in m_stateMap.Keys)
+            {
+                m_closedRegistries.Add(key);
+            }
+        }
+
+        public StateTypeBinder(Func<Type, (IRegistry<IState> registry, IState aggregateState)> registryFunc, params Type[] initialTypes)
+        {
+            m_registryFunc = registryFunc;
+
+            for (int i = 0; i < initialTypes.Length; i++)
+            {
+                m_stateMap.Add(initialTypes[i], m_registryFunc(initialTypes[i]));
+            }
+        }
+
+        public IDisposable BindState<T>(IState state)
+        {
+            var t = typeof(T);
+
+            if (m_closedRegistries.Contains(t))
+            {
+                UnityEngine.Debug.LogError($"{t.Name} is locked, may not register this state");
+                return empty;
+            }
+
+            if (!m_stateMap.ContainsKey(t))
+            {
+                m_stateMap.Add(t, m_registryFunc(t));
+            }
+
+            return m_stateMap[t].registry.Register(state);
+        }
+
+        public IState Get<T>()
+        {
+            var t = typeof(T);
+            return m_stateMap[t].aggregateState;
         }
     }
 
-    public void OpenAllRegistries()
-    {
-        m_closedRegistries.Clear();
-    }
-
-    public void CloseAllRegistries()
-    {
-        foreach (var key in m_stateMap.Keys)
-        {
-            m_closedRegistries.Add(key);
-        }
-    }
-
-    public StateTypeBinder(Func<Type, (IRegistry<IState> registry, IState aggregateState)> registryFunc, params Type[] initialTypes)
-    {
-        m_registryFunc = registryFunc;
-
-        for(int i =0; i < initialTypes.Length; i++)
-        {
-            m_stateMap.Add(initialTypes[i], m_registryFunc(initialTypes[i]));
-        }
-    }
-
-    public IDisposable BindState<T>(IState state)
-    {
-        var t = typeof(T);
-
-        if (m_closedRegistries.Contains(t))
-        {
-            UnityEngine.Debug.LogError($"{t.Name} is locked, may not register this state");
-            return empty;
-        }
-
-        if (!m_stateMap.ContainsKey(t))
-        {
-            m_stateMap.Add(t, m_registryFunc(t));
-        }
-
-        return m_stateMap[t].registry.Register(state);
-    }
-
-    public IState Get<T>()
-    {
-        var t = typeof(T);
-        return m_stateMap[t].aggregateState;
-    }
 }

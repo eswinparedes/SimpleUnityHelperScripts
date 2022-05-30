@@ -1,7 +1,11 @@
 ﻿using System;
 
-public interface IRegistry<T>
+namespace SUHScripts
 {
-    IDisposable Register(T register);
-    public bool Contains(T register);
+    public interface IRegistry<T>
+    {
+        IDisposable Register(T register);
+        public bool Contains(T register);
+    }
+
 }

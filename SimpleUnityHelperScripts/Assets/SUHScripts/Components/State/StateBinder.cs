@@ -2,67 +2,70 @@
 using System;
 using System.Collections.Generic;
 
-public class StateBinder<T> : IStateBinder<T>
+namespace SUHScripts
 {
-    Func<T, (IRegistry<IState> registry, IState aggregateState)> m_registryFunc;
-    Dictionary<T, (IRegistry<IState> registry, IState aggregateState)> m_stateMap = new Dictionary<T, (IRegistry<IState> registry, IState aggregateState)>();
-    HashSet<T> m_closedRegistries = new HashSet<T>();
-    IDisposable empty = InterfaceUtils.Disposable(() => { });
-
-    public StateBinder(Func<T, (IRegistry<IState> registry, IState aggregateState)> registryFunc, params T[] initialKeys)
+    public class StateBinder<T> : IStateBinder<T>
     {
-        m_registryFunc = registryFunc;
+        Func<T, (IRegistry<IState> registry, IState aggregateState)> m_registryFunc;
+        Dictionary<T, (IRegistry<IState> registry, IState aggregateState)> m_stateMap = new Dictionary<T, (IRegistry<IState> registry, IState aggregateState)>();
+        HashSet<T> m_closedRegistries = new HashSet<T>();
+        IDisposable empty = InterfaceUtils.Disposable(() => { });
 
-        for (int i = 0; i < initialKeys.Length; i++)
+        public StateBinder(Func<T, (IRegistry<IState> registry, IState aggregateState)> registryFunc, params T[] initialKeys)
         {
-            m_stateMap.Add(initialKeys[i], m_registryFunc(initialKeys[i]));
-        }
-    }
+            m_registryFunc = registryFunc;
 
-
-    public void SetRegistryOpen(T key, bool isOpen)
-    {
-        if (isOpen)
-        {
-            m_closedRegistries.Remove(key);
-        }
-        {
-            m_closedRegistries.Add(key);
-        }
-    }
-
-    public void OpenAllRegistries()
-    {
-        m_closedRegistries.Clear();
-    }
-
-    public void CloseAllRegistries()
-    {
-        foreach (var key in m_stateMap.Keys)
-        {
-            m_closedRegistries.Add(key);
-        }
-    }
-
-
-    public IDisposable BindState(T key, IState state)
-    {
-        if (m_closedRegistries.Contains(key))
-        {
-            UnityEngine.Debug.LogError($"{key} is locked, may not register this state");
-            return empty;
+            for (int i = 0; i < initialKeys.Length; i++)
+            {
+                m_stateMap.Add(initialKeys[i], m_registryFunc(initialKeys[i]));
+            }
         }
 
-        if (!m_stateMap.ContainsKey(key))
+
+        public void SetRegistryOpen(T key, bool isOpen)
         {
-            m_stateMap.Add(key, m_registryFunc(key));
+            if (isOpen)
+            {
+                m_closedRegistries.Remove(key);
+            }
+            {
+                m_closedRegistries.Add(key);
+            }
         }
 
-        return m_stateMap[key].registry.Register(state);
-    }
+        public void OpenAllRegistries()
+        {
+            m_closedRegistries.Clear();
+        }
 
-    public IState Get(T key)
-    {
-        return m_stateMap[key].aggregateState;
+        public void CloseAllRegistries()
+        {
+            foreach (var key in m_stateMap.Keys)
+            {
+                m_closedRegistries.Add(key);
+            }
+        }
+
+
+        public IDisposable BindState(T key, IState state)
+        {
+            if (m_closedRegistries.Contains(key))
+            {
+                UnityEngine.Debug.LogError($"{key} is locked, may not register this state");
+                return empty;
+            }
+
+            if (!m_stateMap.ContainsKey(key))
+            {
+                m_stateMap.Add(key, m_registryFunc(key));
+            }
+
+            return m_stateMap[key].registry.Register(state);
+        }
+
+        public IState Get(T key)
+        {
+            return m_stateMap[key].aggregateState;
+        }
     }
 }

@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName= "SUHS/Scriptable Values/String Read Only")]
-public class StringReadOnlyValueSO : ScriptableObject
+namespace SUHScripts
 {
-    [SerializeField] string m_value = default;
-    public string Value => m_value;
-}
+    [CreateAssetMenu(menuName = "SUHS/Scriptable Values/String Read Only")]
+    public class StringReadOnlyValueSO : ScriptableObject
+    {
+        [SerializeField] string m_value = default;
+        public string Value => m_value;
+    }
 
+
+}

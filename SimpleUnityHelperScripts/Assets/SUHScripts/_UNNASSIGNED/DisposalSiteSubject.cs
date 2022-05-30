@@ -1,58 +1,63 @@
 ﻿using System.Collections.Generic;
 using System;
 
-public class DisposalSiteSubject : IDisposalSite, IDisposable
+namespace SUHScripts
 {
-    List<IDisposable> m_disposables = new List<IDisposable>();
-    List<Action> m_disposals = new List<Action>();
 
-    bool m_isDisposed = false;
-
-    public void Add(IDisposable disposable)
+    public class DisposalSiteSubject : IDisposalSite, IDisposable
     {
-        if (m_isDisposed)
-        {
-            disposable.Dispose();
-            return;
-        }
-        else
-        {
-            m_disposables.Add(disposable);
-        }
-    }
+        List<IDisposable> m_disposables = new List<IDisposable>();
+        List<Action> m_disposals = new List<Action>();
 
-    public void Add(Action disposal)
-    {
-        if (m_isDisposed)
-        {
-            disposal();
-            return;
-        }
-        else
-        {
-            m_disposals.Add(disposal);
-        }
-    }
+        bool m_isDisposed = false;
 
-    public void Dispose()
-    {
-        if (!m_isDisposed)
+        public void Add(IDisposable disposable)
         {
-            for (int i = 0; i < m_disposables.Count; i++)
+            if (m_isDisposed)
             {
-                m_disposables[i].Dispose();
+                disposable.Dispose();
+                return;
             }
-            m_disposables.Clear();
-            m_disposables = null;
-
-            for (int i = 0; i < m_disposals.Count; i++)
+            else
             {
-                m_disposals[i]();
+                m_disposables.Add(disposable);
             }
-            m_disposals.Clear();
-            m_disposals = null;
+        }
 
-            m_isDisposed = true;
+        public void Add(Action disposal)
+        {
+            if (m_isDisposed)
+            {
+                disposal();
+                return;
+            }
+            else
+            {
+                m_disposals.Add(disposal);
+            }
+        }
+
+        public void Dispose()
+        {
+            if (!m_isDisposed)
+            {
+                for (int i = 0; i < m_disposables.Count; i++)
+                {
+                    m_disposables[i].Dispose();
+                }
+                m_disposables.Clear();
+                m_disposables = null;
+
+                for (int i = 0; i < m_disposals.Count; i++)
+                {
+                    m_disposals[i]();
+                }
+                m_disposals.Clear();
+                m_disposals = null;
+
+                m_isDisposed = true;
+            }
         }
     }
+
 }

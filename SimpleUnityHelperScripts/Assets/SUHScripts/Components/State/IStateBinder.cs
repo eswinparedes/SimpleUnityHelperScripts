@@ -1,7 +1,10 @@
 ﻿using SUHScripts;
 using System;
 
-public interface IStateBinder<T>
+namespace SUHScripts
 {
-    IDisposable BindState(T key, IState state);
+    public interface IStateBinder<T>
+    {
+        IDisposable BindState(T key, IState state);
+    }
 }

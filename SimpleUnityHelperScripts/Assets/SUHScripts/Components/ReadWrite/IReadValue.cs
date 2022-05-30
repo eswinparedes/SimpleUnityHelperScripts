@@ -1,4 +1,8 @@
-﻿public interface IReadValue<T>
+﻿namespace SUHScripts
 {
-    public T Read();
+    public interface IReadValue<T>
+    {
+        public T Read();
+    }
+
 }

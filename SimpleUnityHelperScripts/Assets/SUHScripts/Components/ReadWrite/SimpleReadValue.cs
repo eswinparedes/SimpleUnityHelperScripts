@@ -1,14 +1,17 @@
-﻿public class SimpleReadValue<T> : IReadValue<T>
+﻿namespace SUHScripts
 {
-    public SimpleReadValue(T value)
+    public class SimpleReadValue<T> : IReadValue<T>
     {
-        Value = value;
-    }
+        public SimpleReadValue(T value)
+        {
+            Value = value;
+        }
 
-    public T Value { get; set; }
+        public T Value { get; set; }
 
-    public T Read()
-    {
-        return Value;
+        public T Read()
+        {
+            return Value;
+        }
     }
 }

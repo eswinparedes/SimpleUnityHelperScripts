@@ -480,7 +480,6 @@
 "Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_FirstCompleted.cs"
 "Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_OBV_CommandChain.cs"
 "Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_TestTakeDuring.cs"
-"Assets/SUHScripts/RX_EXT/Extensions/PendingObservableExtensions.cs"
 "Assets/SUHScripts/RX_EXT/Extensions/Test/ScannerTest.cs"
 "Assets/SUHScripts/RX_EXT/Extensions/Test/TEST_SingleSElect.cs"
 "Assets/SUHScripts/RX_EXT/OffsetProvision/OBV_TransformOffsetObserver.cs"

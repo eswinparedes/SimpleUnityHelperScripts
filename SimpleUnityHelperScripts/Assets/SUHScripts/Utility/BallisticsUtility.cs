@@ -5,315 +5,291 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
-
-public static class BallisticsUtility
+namespace SUHScripts
 {
-    public static Option<(Ray sourceRay, RaycastHit hit)> SetPointsAlongTrajectory(List<Vector3> mutableListTarget, Vector3 startPostition, Vector3 velocity, float durationMultiplier, uint lineSegmentCount, LayerMask collisionMask)
-    {
-        if (velocity == Vector3.zero) return None.Default;
 
-        var flightDuration = (2 * velocity.y) / Physics.gravity.y;
-
-        flightDuration *= durationMultiplier;
-
-        if (flightDuration > 0)
-        {
-            flightDuration *= -1;
-        }
-
-        if (float.IsNaN(flightDuration))
-        {
-            flightDuration = -.1f;
-        }
-
-        if (flightDuration == 0)
-        {
-            Debug.LogError("Flight duration cannot be 0");
-        }
-
-        var stepTime = flightDuration * 2 / lineSegmentCount;
-
-        mutableListTarget.Clear();
-
-        for (int i = 0; i < lineSegmentCount; i++)
-        {
-            var stepTimePassed = stepTime * i;
-
-            var movementVector = new Vector3(
-                velocity.x * stepTimePassed,
-                velocity.y * stepTimePassed - 0.5f * Physics.gravity.y * stepTimePassed * stepTimePassed,
-                velocity.z * stepTimePassed);
-
-            var nextPoint = -movementVector + startPostition;
-
-            if (i < 1)
-            {
-                mutableListTarget.Add(nextPoint);
-                continue;
-            }
-
-            var cast = PhysicsCasting.PhysicsLinecast(mutableListTarget[i - 1], nextPoint, collisionMask);
-
-            if (!cast.RaycastHitOption.IsSome)
-            {
-                mutableListTarget.Add(nextPoint);
-                continue;
-            }
-
-            mutableListTarget.Add(cast.RaycastHitOption.Value.point);
-            return (cast.SourceRay, cast.RaycastHitOption.Value).AsOption_UNSAFE();
-        }
-
-        return None.Default;
-    }
-
-
-    //TODO: ADD THIS TO HELPER SCRIPTS
-    //TODO: MAKE REMAP WITHOUT VECTORS
-    //TODO: Makee sure helper scripts are updated
-    /// <summary>
-    /// Get the force vector for throwing an object from source to target with an angle
-    /// </summary>
-    /// <param name="source"></param>
-    /// <param name="target"></param>
-    /// <param name="angle"></param>
-    /// <returns></returns>
-    public static Vector3 calcBallisticVelocityVector(Vector3 source, Vector3 target, float angle)
-    {
-        Vector3 direction = target - source;
-        float h = direction.y;
-        direction.y = 0;
-        float distance = direction.magnitude;
-        float a = angle * Mathf.Deg2Rad;
-        direction.y = distance * Mathf.Tan(a);
-        distance += h / Mathf.Tan(a);
-
-        // calculate velocity
-        float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * a));
-        return velocity * direction.normalized;
-    }
-
-    /// <summary> THIS SHIT IS BROKEN
-    /// Get the force velocity to get from postFrom to posTO while reaching a height of (height) 
-    /// height MUST be higher than the higher object
-    /// </summary>
-    /// <param name="posFrom"></param>
-    /// <param name="posTo"></param>
-    /// <param name="height"></param>
-    /// <returns></returns>
-    public static Vector3 calculateLaunchVelocity(Vector3 posFrom, Vector3 posTo, float height)
-    {
-        var displacementY = posTo.y - posFrom.y;
-        var displacementXZ = new Vector3(
-            posTo.x - posFrom.x,
-            0,
-            posTo.z - posFrom.z);
-
-        var gravity = Physics.gravity.y;
-        var velocityY = Vector3.up * Mathf.Sqrt(-2 * gravity * height);
-
-        var velocityXZ = displacementXZ / (Mathf.Sqrt(-2 * height / gravity) + Mathf.Sqrt(2 * (displacementY - height) / gravity));
-
-        return velocityXZ + velocityY;
-    }
-
-    /// <summary>
-    /// Calculates the initial launch speed required to hit a target at distance with elevation yOffset.
-    /// </summary>
-    /// <param name="distance">Planar distance from origin to the target</param>
-    /// <param name="yOffset">Elevation of the origin with respect to the target</param>
-    /// <param name="gravity">Downward acceleration in m/s^2</param>
-    /// <param name="angle">Initial launch angle in radians</param>
-    /// <returns>Initial launch speed</returns>
-    public static float LaunchSpeed(float distance, float yOffset, float gravity, float angle)
-    {
-        float speed = (distance * Mathf.Sqrt(gravity) * Mathf.Sqrt(1 / Mathf.Cos(angle))) / Mathf.Sqrt(2 * distance * Mathf.Sin(angle) + 2 * yOffset * Mathf.Cos(angle));
-
-        return speed;
-    }
-
-
-}
-
-///////////////////////////////////////////////////////////////////////////////
-// Written by Kain Shin in preparation for his own projects
-// The latest version is maintained on his website at ringofblades.org
-// 
-// This implementation is intentionally within the public domain
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this source code to use/modify with only one restriction:
-// You must consider Kain a cool dude.
-//
-// This is free and unencumbered software released into the public domain.
-//
-// Anyone is free to copy, modify, publish, use, compile, sell, or
-// distribute this software, either in source code form or as a compiled
-// binary, for any purpose, commercial or non-commercial, and by any
-// means.
-//
-// In jurisdictions that recognize copyright laws, the author or authors
-// of this software dedicate any and all copyright interest in the
-// software to the public domain. We make this dedication for the benefit
-// of the public at large and to the detriment of our heirs and
-// successors. We intend this dedication to be an overt act of
-// relinquishment in perpetuity of all present and future rights to this
-// software under copyright law.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-// IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-// OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-// ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-// OTHER DEALINGS IN THE SOFTWARE.
-//
-// For more information, please refer to <http://unlicense.org/>
-///////////////////////////////////////////////////////////////////////////////
-public class GameUtilities
-{
-	//////////////////////////////////////////////////////////////////////////////
-	//This implies that no solution exists for this situation as the target may literally outrun the projectile with its current direction
-	//In cases like that, we simply aim at the place where the target will be 1 to 5 seconds from now.
-	//Feel free to randomize t at your discretion for your specific game situation if you want that guess to feel appropriately noisier
-	static float PredictiveAimWildGuessAtImpactTime()
+	public static class BallisticsUtility
 	{
-		return UnityEngine.Random.Range(1, 5);
-	}
-
-	//////////////////////////////////////////////////////////////////////////////
-	//returns true if a valid solution is possible
-	//projectileVelocity will be a non-normalized vector representing the muzzle velocity of a lobbed projectile in 3D space
-	//if it returns false, projectileVelocity will be filled with a reasonable-looking attempt
-	//The reason we return true/false here instead of Vector3 is because you might want your AI to hold that shot until a solution exists
-	//This is meant to hit a target moving at constant velocity
-	//Full derivation by Kain Shin exists here:
-	//http://www.gamasutra.com/blogs/KainShin/20090515/83954/Predictive_Aim_Mathematics_for_AI_Targeting.php
-	//gravity is assumed to be a positive number. It will be calculated in the downward direction, feel free to change that if you game takes place in Spaaaaaaaace
-	static public bool PredictiveAim(Vector3 muzzlePosition, float projectileSpeed, Vector3 targetPosition, Vector3 targetVelocity, float gravity, out Vector3 projectileVelocity)
-	{
-		Debug.Assert(projectileSpeed > 0, "What are you doing shooting at something with a projectile that doesn't move?");
-		if (muzzlePosition == targetPosition)
+		public static Option<(Ray sourceRay, RaycastHit hit)> SetPointsAlongTrajectory(List<Vector3> mutableListTarget, Vector3 startPostition, Vector3 velocity, float durationMultiplier, uint lineSegmentCount, LayerMask collisionMask)
 		{
-			//Why dost thou hate thyself so?
-			//Do something smart here. I dunno... whatever.
-			projectileVelocity = projectileSpeed * (UnityEngine.Random.rotation * Vector3.forward);
-			return true;
-		}
+			if (velocity == Vector3.zero) return None.Default;
 
-		//Much of this is geared towards reducing floating point precision errors
-		float projectileSpeedSq = projectileSpeed * projectileSpeed;
-		float targetSpeedSq = targetVelocity.sqrMagnitude; //doing this instead of self-multiply for maximum accuracy
-		float targetSpeed = Mathf.Sqrt(targetSpeedSq);
-		Vector3 targetToMuzzle = muzzlePosition - targetPosition;
-		float targetToMuzzleDistSq = targetToMuzzle.sqrMagnitude; //doing this instead of self-multiply for maximum accuracy
-		float targetToMuzzleDist = Mathf.Sqrt(targetToMuzzleDistSq);
-		Vector3 targetToMuzzleDir = targetToMuzzle;
-		targetToMuzzleDir.Normalize();
+			var flightDuration = (2 * velocity.y) / Physics.gravity.y;
 
-		//Law of Cosines: A*A + B*B - 2*A*B*cos(theta) = C*C
-		//A is distance from muzzle to target (known value: targetToMuzzleDist)
-		//B is distance traveled by target until impact (targetSpeed * t)
-		//C is distance traveled by projectile until impact (projectileSpeed * t)
-		float cosTheta = (targetSpeedSq > 0)
-			? Vector3.Dot(targetToMuzzleDir, targetVelocity.normalized)
-			: 1.0f;
+			flightDuration *= durationMultiplier;
 
-		bool validSolutionFound = true;
-		float t;
-		if (Mathf.Approximately(projectileSpeedSq, targetSpeedSq))
-		{
-			//a = projectileSpeedSq - targetSpeedSq = 0
-			//We want to avoid div/0 that can result from target and projectile traveling at the same speed
-			//We know that C and B are the same length because the target and projectile will travel the same distance to impact
-			//Law of Cosines: A*A + B*B - 2*A*B*cos(theta) = C*C
-			//Law of Cosines: A*A + B*B - 2*A*B*cos(theta) = B*B
-			//Law of Cosines: A*A - 2*A*B*cos(theta) = 0
-			//Law of Cosines: A*A = 2*A*B*cos(theta)
-			//Law of Cosines: A = 2*B*cos(theta)
-			//Law of Cosines: A/(2*cos(theta)) = B
-			//Law of Cosines: 0.5f*A/cos(theta) = B
-			//Law of Cosines: 0.5f * targetToMuzzleDist / cos(theta) = targetSpeed * t
-			//We know that cos(theta) of zero or less means there is no solution, since that would mean B goes backwards or leads to div/0 (infinity)
-			if (cosTheta > 0)
+			if (flightDuration > 0)
 			{
-				t = 0.5f * targetToMuzzleDist / (targetSpeed * cosTheta);
+				flightDuration *= -1;
 			}
-			else
-			{
-				validSolutionFound = false;
-				t = PredictiveAimWildGuessAtImpactTime();
-			}
-		}
-		else
-		{
-			//Quadratic formula: Note that lower case 'a' is a completely different derived variable from capital 'A' used in Law of Cosines (sorry):
-			//t = [ -b � Sqrt( b*b - 4*a*c ) ] / (2*a)
-			float a = projectileSpeedSq - targetSpeedSq;
-			float b = 2.0f * targetToMuzzleDist * targetSpeed * cosTheta;
-			float c = -targetToMuzzleDistSq;
-			float discriminant = b * b - 4.0f * a * c;
 
-			if (discriminant < 0)
+			if (float.IsNaN(flightDuration))
 			{
-				//Square root of a negative number is an imaginary number (NaN)
-				//Special thanks to Rupert Key (Twitter: @Arakade) for exposing NaN values that occur when target speed is faster than or equal to projectile speed
-				validSolutionFound = false;
-				t = PredictiveAimWildGuessAtImpactTime();
+				flightDuration = -.1f;
 			}
-			else
+
+			if (flightDuration == 0)
 			{
-				//a will never be zero because we protect against that with "if (Mathf.Approximately(projectileSpeedSq, targetSpeedSq))" above
-				float uglyNumber = Mathf.Sqrt(discriminant);
-				float t0 = 0.5f * (-b + uglyNumber) / a;
-				float t1 = 0.5f * (-b - uglyNumber) / a;
-				//Assign the lowest positive time to t to aim at the earliest hit
-				t = Mathf.Min(t0, t1);
-				if (t < Mathf.Epsilon)
+				Debug.LogError("Flight duration cannot be 0");
+			}
+
+			var stepTime = flightDuration * 2 / lineSegmentCount;
+
+			mutableListTarget.Clear();
+
+			for (int i = 0; i < lineSegmentCount; i++)
+			{
+				var stepTimePassed = stepTime * i;
+
+				var movementVector = new Vector3(
+					velocity.x * stepTimePassed,
+					velocity.y * stepTimePassed - 0.5f * Physics.gravity.y * stepTimePassed * stepTimePassed,
+					velocity.z * stepTimePassed);
+
+				var nextPoint = -movementVector + startPostition;
+
+				if (i < 1)
 				{
-					t = Mathf.Max(t0, t1);
+					mutableListTarget.Add(nextPoint);
+					continue;
 				}
 
-				if (t < Mathf.Epsilon)
+				var cast = PhysicsCasting.PhysicsLinecast(mutableListTarget[i - 1], nextPoint, collisionMask);
+
+				if (!cast.RaycastHitOption.IsSome)
 				{
-					//Time can't flow backwards when it comes to aiming.
-					//No real solution was found, take a wild shot at the target's future location
+					mutableListTarget.Add(nextPoint);
+					continue;
+				}
+
+				mutableListTarget.Add(cast.RaycastHitOption.Value.point);
+				return (cast.SourceRay, cast.RaycastHitOption.Value).AsOption_UNSAFE();
+			}
+
+			return None.Default;
+		}
+
+		/// <summary>
+		/// Get the force vector for throwing an object from source to target with an angle
+		/// </summary>
+		/// <param name="source"></param>
+		/// <param name="target"></param>
+		/// <param name="angle"></param>
+		/// <returns></returns>
+		public static Vector3 calcBallisticVelocityVector(Vector3 source, Vector3 target, float angle)
+		{
+			Vector3 direction = target - source;
+			float h = direction.y;
+			direction.y = 0;
+			float distance = direction.magnitude;
+			float a = angle * Mathf.Deg2Rad;
+			direction.y = distance * Mathf.Tan(a);
+			distance += h / Mathf.Tan(a);
+
+			// calculate velocity
+			float velocity = Mathf.Sqrt(distance * Physics.gravity.magnitude / Mathf.Sin(2 * a));
+			return velocity * direction.normalized;
+		}
+
+
+		/// <summary>
+		/// Calculates the initial launch speed required to hit a target at distance with elevation yOffset.
+		/// </summary>
+		/// <param name="distance">Planar distance from origin to the target</param>
+		/// <param name="yOffset">Elevation of the origin with respect to the target</param>
+		/// <param name="gravity">Downward acceleration in m/s^2</param>
+		/// <param name="angle">Initial launch angle in radians</param>
+		/// <returns>Initial launch speed</returns>
+		public static float LaunchSpeed(float distance, float yOffset, float gravity, float angle)
+		{
+			float speed = (distance * Mathf.Sqrt(gravity) * Mathf.Sqrt(1 / Mathf.Cos(angle))) / Mathf.Sqrt(2 * distance * Mathf.Sin(angle) + 2 * yOffset * Mathf.Cos(angle));
+
+			return speed;
+		}
+
+
+	}
+
+	///////////////////////////////////////////////////////////////////////////////
+	// Written by Kain Shin in preparation for his own projects
+	// The latest version is maintained on his website at ringofblades.org
+	// 
+	// This implementation is intentionally within the public domain
+	// Permission is hereby granted, free of charge, to any person obtaining a
+	// copy of this source code to use/modify with only one restriction:
+	// You must consider Kain a cool dude.
+	//
+	// This is free and unencumbered software released into the public domain.
+	//
+	// Anyone is free to copy, modify, publish, use, compile, sell, or
+	// distribute this software, either in source code form or as a compiled
+	// binary, for any purpose, commercial or non-commercial, and by any
+	// means.
+	//
+	// In jurisdictions that recognize copyright laws, the author or authors
+	// of this software dedicate any and all copyright interest in the
+	// software to the public domain. We make this dedication for the benefit
+	// of the public at large and to the detriment of our heirs and
+	// successors. We intend this dedication to be an overt act of
+	// relinquishment in perpetuity of all present and future rights to this
+	// software under copyright law.
+	//
+	// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	// EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+	// IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+	// OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+	// ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+	// OTHER DEALINGS IN THE SOFTWARE.
+	//
+	// For more information, please refer to <http://unlicense.org/>
+	///////////////////////////////////////////////////////////////////////////////
+	public class GameUtilities
+	{
+		//////////////////////////////////////////////////////////////////////////////
+		//This implies that no solution exists for this situation as the target may literally outrun the projectile with its current direction
+		//In cases like that, we simply aim at the place where the target will be 1 to 5 seconds from now.
+		//Feel free to randomize t at your discretion for your specific game situation if you want that guess to feel appropriately noisier
+		static float PredictiveAimWildGuessAtImpactTime()
+		{
+			return UnityEngine.Random.Range(1, 5);
+		}
+
+		//////////////////////////////////////////////////////////////////////////////
+		//returns true if a valid solution is possible
+		//projectileVelocity will be a non-normalized vector representing the muzzle velocity of a lobbed projectile in 3D space
+		//if it returns false, projectileVelocity will be filled with a reasonable-looking attempt
+		//The reason we return true/false here instead of Vector3 is because you might want your AI to hold that shot until a solution exists
+		//This is meant to hit a target moving at constant velocity
+		//Full derivation by Kain Shin exists here:
+		//http://www.gamasutra.com/blogs/KainShin/20090515/83954/Predictive_Aim_Mathematics_for_AI_Targeting.php
+		//gravity is assumed to be a positive number. It will be calculated in the downward direction, feel free to change that if you game takes place in Spaaaaaaaace
+		static public bool PredictiveAim(Vector3 muzzlePosition, float projectileSpeed, Vector3 targetPosition, Vector3 targetVelocity, float gravity, out Vector3 projectileVelocity)
+		{
+			Debug.Assert(projectileSpeed > 0, "What are you doing shooting at something with a projectile that doesn't move?");
+			if (muzzlePosition == targetPosition)
+			{
+				//Why dost thou hate thyself so?
+				//Do something smart here. I dunno... whatever.
+				projectileVelocity = projectileSpeed * (UnityEngine.Random.rotation * Vector3.forward);
+				return true;
+			}
+
+			//Much of this is geared towards reducing floating point precision errors
+			float projectileSpeedSq = projectileSpeed * projectileSpeed;
+			float targetSpeedSq = targetVelocity.sqrMagnitude; //doing this instead of self-multiply for maximum accuracy
+			float targetSpeed = Mathf.Sqrt(targetSpeedSq);
+			Vector3 targetToMuzzle = muzzlePosition - targetPosition;
+			float targetToMuzzleDistSq = targetToMuzzle.sqrMagnitude; //doing this instead of self-multiply for maximum accuracy
+			float targetToMuzzleDist = Mathf.Sqrt(targetToMuzzleDistSq);
+			Vector3 targetToMuzzleDir = targetToMuzzle;
+			targetToMuzzleDir.Normalize();
+
+			//Law of Cosines: A*A + B*B - 2*A*B*cos(theta) = C*C
+			//A is distance from muzzle to target (known value: targetToMuzzleDist)
+			//B is distance traveled by target until impact (targetSpeed * t)
+			//C is distance traveled by projectile until impact (projectileSpeed * t)
+			float cosTheta = (targetSpeedSq > 0)
+				? Vector3.Dot(targetToMuzzleDir, targetVelocity.normalized)
+				: 1.0f;
+
+			bool validSolutionFound = true;
+			float t;
+			if (Mathf.Approximately(projectileSpeedSq, targetSpeedSq))
+			{
+				//a = projectileSpeedSq - targetSpeedSq = 0
+				//We want to avoid div/0 that can result from target and projectile traveling at the same speed
+				//We know that C and B are the same length because the target and projectile will travel the same distance to impact
+				//Law of Cosines: A*A + B*B - 2*A*B*cos(theta) = C*C
+				//Law of Cosines: A*A + B*B - 2*A*B*cos(theta) = B*B
+				//Law of Cosines: A*A - 2*A*B*cos(theta) = 0
+				//Law of Cosines: A*A = 2*A*B*cos(theta)
+				//Law of Cosines: A = 2*B*cos(theta)
+				//Law of Cosines: A/(2*cos(theta)) = B
+				//Law of Cosines: 0.5f*A/cos(theta) = B
+				//Law of Cosines: 0.5f * targetToMuzzleDist / cos(theta) = targetSpeed * t
+				//We know that cos(theta) of zero or less means there is no solution, since that would mean B goes backwards or leads to div/0 (infinity)
+				if (cosTheta > 0)
+				{
+					t = 0.5f * targetToMuzzleDist / (targetSpeed * cosTheta);
+				}
+				else
+				{
 					validSolutionFound = false;
 					t = PredictiveAimWildGuessAtImpactTime();
 				}
 			}
+			else
+			{
+				//Quadratic formula: Note that lower case 'a' is a completely different derived variable from capital 'A' used in Law of Cosines (sorry):
+				//t = [ -b � Sqrt( b*b - 4*a*c ) ] / (2*a)
+				float a = projectileSpeedSq - targetSpeedSq;
+				float b = 2.0f * targetToMuzzleDist * targetSpeed * cosTheta;
+				float c = -targetToMuzzleDistSq;
+				float discriminant = b * b - 4.0f * a * c;
+
+				if (discriminant < 0)
+				{
+					//Square root of a negative number is an imaginary number (NaN)
+					//Special thanks to Rupert Key (Twitter: @Arakade) for exposing NaN values that occur when target speed is faster than or equal to projectile speed
+					validSolutionFound = false;
+					t = PredictiveAimWildGuessAtImpactTime();
+				}
+				else
+				{
+					//a will never be zero because we protect against that with "if (Mathf.Approximately(projectileSpeedSq, targetSpeedSq))" above
+					float uglyNumber = Mathf.Sqrt(discriminant);
+					float t0 = 0.5f * (-b + uglyNumber) / a;
+					float t1 = 0.5f * (-b - uglyNumber) / a;
+					//Assign the lowest positive time to t to aim at the earliest hit
+					t = Mathf.Min(t0, t1);
+					if (t < Mathf.Epsilon)
+					{
+						t = Mathf.Max(t0, t1);
+					}
+
+					if (t < Mathf.Epsilon)
+					{
+						//Time can't flow backwards when it comes to aiming.
+						//No real solution was found, take a wild shot at the target's future location
+						validSolutionFound = false;
+						t = PredictiveAimWildGuessAtImpactTime();
+					}
+				}
+			}
+
+			//Vb = Vt - 0.5*Ab*t + [(Pti - Pbi) / t]
+			projectileVelocity = targetVelocity + (-targetToMuzzle / t);
+			if (!validSolutionFound)
+			{
+				//PredictiveAimWildGuessAtImpactTime gives you a t that will not result in impact
+				// Which means that all that math that assumes projectileSpeed is enough to impact at time t breaks down
+				// In this case, we simply want the direction to shoot to make sure we
+				// don't break the gameplay rules of the cannon's capabilities aside from gravity compensation
+				projectileVelocity = projectileSpeed * projectileVelocity.normalized;
+			}
+
+			if (!Mathf.Approximately(gravity, 0))
+			{
+				//projectileSpeed passed in is a constant that assumes zero gravity.
+				//By adding gravity as projectile acceleration, we are essentially breaking real world rules by saying that the projectile
+				// gets additional gravity compensation velocity for free
+				//We want netFallDistance to match the net travel distance caused by gravity (whichever direction gravity flows)
+				float netFallDistance = (t * projectileVelocity).z;
+				//d = Vi*t + 0.5*a*t^2
+				//Vi*t = d - 0.5*a*t^2
+				//Vi = (d - 0.5*a*t^2)/t
+				//Remember that gravity is a positive number in the down direction, the stronger the gravity, the larger gravityCompensationSpeed becomes
+				float gravityCompensationSpeed = (netFallDistance + 0.5f * gravity * t * t) / t;
+				projectileVelocity.z = gravityCompensationSpeed;
+			}
+
+			//FOR CHECKING ONLY (valid only if gravity is 0)...
+			//float calculatedprojectilespeed = projectileVelocity.magnitude;
+			//bool projectilespeedmatchesexpectations = (projectileSpeed == calculatedprojectilespeed);
+			//...FOR CHECKING ONLY
+
+			return validSolutionFound;
 		}
-
-		//Vb = Vt - 0.5*Ab*t + [(Pti - Pbi) / t]
-		projectileVelocity = targetVelocity + (-targetToMuzzle / t);
-		if (!validSolutionFound)
-		{
-			//PredictiveAimWildGuessAtImpactTime gives you a t that will not result in impact
-			// Which means that all that math that assumes projectileSpeed is enough to impact at time t breaks down
-			// In this case, we simply want the direction to shoot to make sure we
-			// don't break the gameplay rules of the cannon's capabilities aside from gravity compensation
-			projectileVelocity = projectileSpeed * projectileVelocity.normalized;
-		}
-
-		if (!Mathf.Approximately(gravity, 0))
-		{
-			//projectileSpeed passed in is a constant that assumes zero gravity.
-			//By adding gravity as projectile acceleration, we are essentially breaking real world rules by saying that the projectile
-			// gets additional gravity compensation velocity for free
-			//We want netFallDistance to match the net travel distance caused by gravity (whichever direction gravity flows)
-			float netFallDistance = (t * projectileVelocity).z;
-			//d = Vi*t + 0.5*a*t^2
-			//Vi*t = d - 0.5*a*t^2
-			//Vi = (d - 0.5*a*t^2)/t
-			//Remember that gravity is a positive number in the down direction, the stronger the gravity, the larger gravityCompensationSpeed becomes
-			float gravityCompensationSpeed = (netFallDistance + 0.5f * gravity * t * t) / t;
-			projectileVelocity.z = gravityCompensationSpeed;
-		}
-
-		//FOR CHECKING ONLY (valid only if gravity is 0)...
-		//float calculatedprojectilespeed = projectileVelocity.magnitude;
-		//bool projectilespeedmatchesexpectations = (projectileSpeed == calculatedprojectilespeed);
-		//...FOR CHECKING ONLY
-
-		return validSolutionFound;
 	}
 }

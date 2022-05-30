@@ -2,51 +2,56 @@
 using UnityEngine;
 using SUHScripts;
 
-//TODO: REFACTOR USING EVENT WRAPPER, REMOVE UNIRX DEPENDENCY
-[DisallowMultipleComponent]
-public abstract class ATransitionMonoBehaviour : MonoBehaviour
+namespace SUHScripts
 {
-    [SerializeField] bool m_hideOnAwake = true;
 
-    public event Action OnHide;
-    public event Action OnShow;
-
-    public bool IsShown { get; private set; } = false;
-
-    protected virtual void Awake()
+    //TODO: REFACTOR USING EVENT WRAPPER, REMOVE UNIRX DEPENDENCY
+    [DisallowMultipleComponent]
+    public abstract class ATransitionMonoBehaviour : MonoBehaviour
     {
-        if (m_hideOnAwake)
+        [SerializeField] bool m_hideOnAwake = true;
+
+        public event Action OnHide;
+        public event Action OnShow;
+
+        public bool IsShown { get; private set; } = false;
+
+        protected virtual void Awake()
         {
-            IsShown = true;
-            RaiseOnHide();
+            if (m_hideOnAwake)
+            {
+                IsShown = true;
+                RaiseOnHide();
+            }
+            else
+            {
+                IsShown = false;
+                RaiseOnShow();
+            }
         }
-        else
+        protected void RaiseOnHide()
         {
+            if (!IsShown)
+            {
+                Debug.LogWarning($"GameObject : {gameObject.name} - Attempting to hide transition that is already hidden!");
+                return;
+            }
+
             IsShown = false;
-            RaiseOnShow();
+            OnHide?.Invoke();
         }
-    }
-    protected void RaiseOnHide()
-    {
-        if(!IsShown)
+        protected void RaiseOnShow()
         {
-            Debug.LogWarning($"GameObject : {gameObject.name} - Attempting to hide transition that is already hidden!");
-            return;
-        }
+            if (IsShown)
+            {
+                Debug.LogWarning($"GameObject : {gameObject.name} - Attempting to show transition that is already shown!");
+                return;
+            }
 
-        IsShown = false;
-        OnHide?.Invoke();
-    }
-    protected void RaiseOnShow()
-    {
-        if (IsShown)
-        {
-            Debug.LogWarning($"GameObject : {gameObject.name} - Attempting to show transition that is already shown!");
-            return;
+            IsShown = true;
+            OnShow?.Invoke();
         }
-
-        IsShown = true;
-        OnShow?.Invoke();
     }
+
+
 }
-

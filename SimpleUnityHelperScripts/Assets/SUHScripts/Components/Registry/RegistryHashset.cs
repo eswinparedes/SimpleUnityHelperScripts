@@ -1,18 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class RegistryHashset<T> : IRegistry<T>
+namespace SUHScripts
 {
-    public HashSet<T> HashSet { get; }  = new HashSet<T>();
-
-    public bool Contains(T register)
+    public class RegistryHashset<T> : IRegistry<T>
     {
-        return HashSet.Contains(register);
+        public HashSet<T> HashSet { get; } = new HashSet<T>();
+
+        public bool Contains(T register)
+        {
+            return HashSet.Contains(register);
+        }
+
+        public IDisposable Register(T register)
+        {
+            HashSet.Add(register);
+            return InterfaceUtils.Disposable(() => HashSet.Remove(register));
+        }
     }
 
-    public IDisposable Register(T register)
-    {
-        HashSet.Add(register);
-        return InterfaceUtils.Disposable(() => HashSet.Remove(register));
-    }
 }

@@ -1,7 +1,11 @@
 ﻿using System;
 
-public interface IDisposalSite
+namespace SUHScripts
 {
-    public void Add(IDisposable disposable);
-    public void Add(Action disposal);
+    public interface IDisposalSite
+    {
+        public void Add(IDisposable disposable);
+        public void Add(Action disposal);
+    }
+
 }

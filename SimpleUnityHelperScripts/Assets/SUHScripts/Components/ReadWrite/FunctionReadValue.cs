@@ -1,12 +1,15 @@
 ﻿using System;
 
-public class FunctionReadValue<T> : IReadValue<T>
+namespace SUHScripts
 {
-    public FunctionReadValue(Func<T> run)
+    public class FunctionReadValue<T> : IReadValue<T>
     {
-        m_read = run;
-    }
+        public FunctionReadValue(Func<T> run)
+        {
+            m_read = run;
+        }
 
-    Func<T> m_read;
-    public T Read() => m_read();
+        Func<T> m_read;
+        public T Read() => m_read();
+    }
 }

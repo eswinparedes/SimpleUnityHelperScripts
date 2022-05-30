@@ -1,16 +1,20 @@
-﻿public class SimpleWriteValue<T> : IWriteValue<T>
+﻿namespace SUHScripts
 {
-    public SimpleWriteValue(T seed)
+    public class SimpleWriteValue<T> : IWriteValue<T>
     {
-        m_value = seed;
+        public SimpleWriteValue(T seed)
+        {
+            m_value = seed;
+        }
+
+        public void Write(T value)
+        {
+            m_value = value;
+        }
+
+        T m_value;
+        public T Value => m_value;
     }
 
-    public void Write(T value)
-    {
-        m_value = value;
-    }
 
-    T m_value;
-    public T Value => m_value;
 }
-

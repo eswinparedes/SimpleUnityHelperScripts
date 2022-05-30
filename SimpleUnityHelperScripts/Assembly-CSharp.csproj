@@ -76,7 +76,6 @@
     <Compile Include="Assets\SUHScripts\RX_EXT\_UNNASSIGNED\GizmoUse.cs" />
     <Compile Include="Assets\SUHScripts\Data\TransformIdentity\TransformOrientationOperations.cs" />
     <Compile Include="Assets\SUHScripts\Utility\Extensions\ArrayExtensions.cs" />
-    <Compile Include="Assets\SUHScripts\RX_EXT\Extensions\PendingObservableExtensions.cs" />
     <Compile Include="Assets\SUHScripts\RX_EXT\OffsetProvision\Tests\TEST_LocalOffsetProvider.cs" />
     <Compile Include="Assets\SUHScripts\RX_EXT\Collision\3D\Test\CollisionObservableTesting.cs" />
     <Compile Include="Assets\SUHScripts\Utility\Math\MathHelper.cs" />

@@ -3,13 +3,15 @@ using UnityEngine;
 using UniRx;
 using SUHScripts.Functional;
 
+namespace SUHScripts
+{
 
     [DisallowMultipleComponent]
     public class M_ColliderObservable2D : A_ColliderObservable2D
     {
         Subject<CollisionObserved2D> m_onEnter = new Subject<CollisionObserved2D>();
         Subject<CollisionObserved2D> m_onExit = new Subject<CollisionObserved2D>();
-   
+
         public override IObservable<CollisionObserved2D> OnEnter => m_onEnter;
         public override IObservable<CollisionObserved2D> OnExit => m_onExit;
 
@@ -39,6 +41,8 @@ using SUHScripts.Functional;
         private void OnTriggerExit2D(Collider2D other)
         {
             var col = new CollisionObserved2D(None.Default, other);
-            m_onExit.OnNext(col); 
+            m_onExit.OnNext(col);
         }
     }
+
+}

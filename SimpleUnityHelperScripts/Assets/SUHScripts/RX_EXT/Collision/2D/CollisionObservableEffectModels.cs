@@ -4,15 +4,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public struct CollisionObserved2D
+namespace SUHScripts
 {
-    public CollisionObserved2D(Option<Collision2D> collisionData, Collider2D collidingOther)
+    public struct CollisionObserved2D
     {
-        CollisionData = collisionData;
-        CollidingOther = collidingOther;
+        public CollisionObserved2D(Option<Collision2D> collisionData, Collider2D collidingOther)
+        {
+            CollisionData = collisionData;
+            CollidingOther = collidingOther;
+        }
+
+        public Option<Collision2D> CollisionData { get; }
+
+        public Collider2D CollidingOther { get; }
     }
-
-    public Option<Collision2D> CollisionData { get; }
-
-    public Collider2D CollidingOther { get; }
 }

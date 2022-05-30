@@ -1,4 +1,8 @@
-﻿public interface IWriteValue<T>
+﻿namespace SUHScripts
 {
-    public void Write(T value);
+    public interface IWriteValue<T>
+    {
+        public void Write(T value);
+    }
+
 }

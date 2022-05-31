@@ -65,6 +65,11 @@ namespace SUHScripts
 
         public IState Get(T key)
         {
+            if (!m_stateMap.ContainsKey(key))
+            {
+                m_stateMap.Add(key, m_registryFunc(key));
+            }
+
             return m_stateMap[key].aggregateState;
         }
     }

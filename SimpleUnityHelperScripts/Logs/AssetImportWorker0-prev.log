@@ -15,7 +15,7 @@ D:/projects/GitHub/SimpleUnityHelperScripts/SimpleUnityHelperScripts
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54054
+50207
 Successfully changed project path to: D:/projects/GitHub/SimpleUnityHelperScripts/SimpleUnityHelperScripts
 D:/projects/GitHub/SimpleUnityHelperScripts/SimpleUnityHelperScripts
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ D:/projects/GitHub/SimpleUnityHelperScripts/SimpleUnityHelperScripts
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 157.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 115.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.0f1 (6eacc8284459)
 [Subsystems] Discovering subsystems at path D:/programs/UNITY_EDITORS/2021.3.0f1/Editor/Data/Resources/UnitySubsystems
@@ -63,823 +63,94 @@ Initialize mono
 Mono path[0] = 'D:/programs/UNITY_EDITORS/2021.3.0f1/Editor/Data/Managed'
 Mono path[1] = 'D:/programs/UNITY_EDITORS/2021.3.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/programs/UNITY_EDITORS/2021.3.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56940
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/programs/UNITY_EDITORS/2021.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/programs/UNITY_EDITORS/2021.3.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009478 seconds.
+Registered in 0.004449 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 127.58 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 108.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.274 seconds
+- Completed reload, in  0.876 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1275ms)
-		BeginReloadAssembly (147ms)
+	ReloadAssembly (877ms)
+		BeginReloadAssembly (124ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (815ms)
-			LoadAssemblies (147ms)
+		EndReloadAssembly (619ms)
+			LoadAssemblies (125ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (253ms)
+			SetupTypeCache (153ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (435ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (365ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (91ms)
+				InitializePlatformSupportModulesInManaged (74ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (128ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (154ms)
-				ProcessInitializeOnLoadMethodAttributes (60ms)
+				RefreshPlugins (109ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (124ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005318 seconds.
-Android Extension - Scanning For ADB Devices 1130 ms
+Registered in 0.005381 seconds.
+Android Extension - Scanning For ADB Devices 793 ms
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.537 seconds
+- Completed reload, in  1.406 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1538ms)
-		BeginReloadAssembly (176ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1167ms)
-			LoadAssemblies (154ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (390ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (510ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (21ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (345ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
-Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3225 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (112.1 KB). Loaded Objects now: 3687.
-Memory consumption went from 112.1 MB to 112.0 MB.
-Total: 5.950300 ms (FindLiveObjects: 0.536800 ms CreateObjectMapping: 0.355900 ms MarkObjects: 4.853400 ms  DeleteObjects: 0.202400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006113 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.530 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1531ms)
-		BeginReloadAssembly (217ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (46ms)
-		EndReloadAssembly (1159ms)
-			LoadAssemblies (174ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (420ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (480ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (35ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (100ms)
-				ProcessInitializeOnLoadAttributes (305ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3460 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (78.9 KB). Loaded Objects now: 3930.
-Memory consumption went from 118.6 MB to 118.5 MB.
-Total: 3.014300 ms (FindLiveObjects: 0.396900 ms CreateObjectMapping: 0.264200 ms MarkObjects: 2.247300 ms  DeleteObjects: 0.104600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 757240.446961 seconds.
-  path: Assets/SUHScripts
-  artifactKey: Guid(866d012394c40f344989f25daf77c7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts using Guid(866d012394c40f344989f25daf77c7ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc8fb4c94847e12306b5604de68872b5') in 0.031377 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.193532 seconds.
-  path: Assets/SUHScripts/Components
-  artifactKey: Guid(f668ff116904a2a4d9dfb9edb173c3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components using Guid(f668ff116904a2a4d9dfb9edb173c3a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd0b3955e7f212ce477a94bf6c13702b') in 0.010513 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.453396 seconds.
-  path: Assets/SUHScripts/Components/DependencySource
-  artifactKey: Guid(0acbcca3853936246be93430cb6d38db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource using Guid(0acbcca3853936246be93430cb6d38db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7e0516971bfe58065a826eee40bb034') in 0.010336 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.588361 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource
-  artifactKey: Guid(9f7e3ecd559dd9b4f9e6a648e5ff3eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource using Guid(9f7e3ecd559dd9b4f9e6a648e5ff3eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d4b4093c9e40e18f95a3c3517811c93') in 0.002522 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.781246 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/DependencySourceSubject.cs
-  artifactKey: Guid(ad4b1611ab280334aaa1754be0609d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/DependencySourceSubject.cs using Guid(ad4b1611ab280334aaa1754be0609d0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f872081af33ade69cdcc7825a2643f32') in 0.055578 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.540669 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity
-  artifactKey: Guid(0b868425cc5c168419d17a01ca8c053b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity using Guid(0b868425cc5c168419d17a01ca8c053b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2894359bc24e14e8827164cb6faedbe') in 0.011025 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.781950 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/CompositeDependencySourceMono.cs
-  artifactKey: Guid(38958b0c70fc88146b69b73fda507ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/CompositeDependencySourceMono.cs using Guid(38958b0c70fc88146b69b73fda507ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84eece426fe3fcd4f51445f35906d05b') in 0.009865 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.444764 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourcePointer.cs
-  artifactKey: Guid(704f3c601e3d103419d6838fae380d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourcePointer.cs using Guid(704f3c601e3d103419d6838fae380d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43da06bdeadd2516df1eaac9f43ffc96') in 0.008373 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.939397 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjector.cs
-  artifactKey: Guid(ca0dbfaf5b5c2cc4dac6df4c6cd233a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjector.cs using Guid(ca0dbfaf5b5c2cc4dac6df4c6cd233a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76714c6826c9adeac6cd7f832e43a472') in 0.007773 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.768728 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjectorMono.cs
-  artifactKey: Guid(a405ad604eb659c49b508b15f30fb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjectorMono.cs using Guid(a405ad604eb659c49b508b15f30fb1b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19cdb06ea68c74645407c4f39f4b0258') in 0.008788 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.246074 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjectorSingleton.cs
-  artifactKey: Guid(cb299867382d65b40a9ae2137300e809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjectorSingleton.cs using Guid(cb299867382d65b40a9ae2137300e809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bc49cb6b4bfb8b7531de0924c35acbe') in 0.008429 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.046786 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjectorSingletonAsync.cs
-  artifactKey: Guid(857251f452ff2e5448657efb6de92833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjectorSingletonAsync.cs using Guid(857251f452ff2e5448657efb6de92833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15348e1511061d3035c94598bce7ce7e') in 0.008290 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.848159 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/UnityEvent_DependencySource.cs
-  artifactKey: Guid(0bd5bb23ea8d99b439e3afdb0a67218b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/UnityEvent_DependencySource.cs using Guid(0bd5bb23ea8d99b439e3afdb0a67218b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff31ffd9aa37ad78d16d65afa8bff59c') in 0.007824 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 79.840539 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/IDependencySource.cs
-  artifactKey: Guid(e12e6c54d8409974aa2c0b3faeefe053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/IDependencySource.cs using Guid(e12e6c54d8409974aa2c0b3faeefe053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61f7a25e9289a3220cd4957352edde17') in 0.007563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.102319 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/IDependencySourceSubjectInjector.cs
-  artifactKey: Guid(4e083bcdc0a1d874d86171f9429288e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/IDependencySourceSubjectInjector.cs using Guid(4e083bcdc0a1d874d86171f9429288e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5804c37c081c54af7160a00405f0257e') in 0.008127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.063887 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/IDependencySourceSubjectInjectorAsync.cs
-  artifactKey: Guid(297061b4ba9dd9c499a8012d179f3278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/IDependencySourceSubjectInjectorAsync.cs using Guid(297061b4ba9dd9c499a8012d179f3278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba5816693d364618b8396e102939fa3') in 0.008500 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008651 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.335 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1336ms)
-		BeginReloadAssembly (189ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (996ms)
-			LoadAssemblies (149ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (392ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (53ms)
-			SetupLoadedEditorAssemblies (386ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (28ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (243ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.51 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3644 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (79.0 KB). Loaded Objects now: 4117.
-Memory consumption went from 123.0 MB to 122.9 MB.
-Total: 3.115000 ms (FindLiveObjects: 0.302900 ms CreateObjectMapping: 0.296300 ms MarkObjects: 2.438800 ms  DeleteObjects: 0.075900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006243 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.302 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1302ms)
-		BeginReloadAssembly (189ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (47ms)
-		EndReloadAssembly (968ms)
-			LoadAssemblies (141ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (390ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (377ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (244ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3644 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (79.0 KB). Loaded Objects now: 4120.
-Memory consumption went from 123.0 MB to 122.9 MB.
-Total: 2.968100 ms (FindLiveObjects: 0.286100 ms CreateObjectMapping: 0.247900 ms MarkObjects: 2.351100 ms  DeleteObjects: 0.081900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 178.036882 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/FirstInFirstQueryDependencySource.cs
-  artifactKey: Guid(547424e0854d1f04d8780b472b361597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/FirstInFirstQueryDependencySource.cs using Guid(547424e0854d1f04d8780b472b361597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '130caa04ed18552b756dec939f0219fe') in 0.012789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.417460 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/DependencySource.cs
-  artifactKey: Guid(1ff83e1014f921d47b5bbd1554d20f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/DependencySource.cs using Guid(1ff83e1014f921d47b5bbd1554d20f1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4db254112706009075855134847f4794') in 0.002689 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.162681 seconds.
-  path: Assets/Plugins
-  artifactKey: Guid(193f756554f939742bfea946b5529c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins using Guid(193f756554f939742bfea946b5529c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd95e54fb29d0ce641a9fcaf74880c926') in 0.008473 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.011807 seconds.
-  path: Assets/Plugins/UniRx
-  artifactKey: Guid(ad48ce3677c6c5a4ea6c1fd2c0b40257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/UniRx using Guid(ad48ce3677c6c5a4ea6c1fd2c0b40257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c994a1dbb44de2b37f1a030ca01e2e9b') in 0.007883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.274366 seconds.
-  path: Assets/SUHScripts/RX_EXT
-  artifactKey: Guid(0ed6cab05cd8b0f44a057f4b9dde332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT using Guid(0ed6cab05cd8b0f44a057f4b9dde332a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '708f6f5a6c5daf1dd8a54bfa4e6546af') in 0.010828 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.466383 seconds.
-  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED
-  artifactKey: Guid(07023646760fa4a4284c095f47081057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED using Guid(07023646760fa4a4284c095f47081057) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b108a9e3800702d789933a6fa3f3b423') in 0.008799 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.846933 seconds.
-  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/BoundReactiveDictionary.cs
-  artifactKey: Guid(995d9b88d6b3c5641ad494397704f8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/BoundReactiveDictionary.cs using Guid(995d9b88d6b3c5641ad494397704f8a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c886e8a7e3651b0a0818814e84d616') in 0.007524 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.938079 seconds.
-  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/CustomAnimationEventObserver.cs
-  artifactKey: Guid(020ae36dd060695418beec505a26d00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/CustomAnimationEventObserver.cs using Guid(020ae36dd060695418beec505a26d00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '059383ec8ee623ceb4b08531cd983d86') in 0.008409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.184569 seconds.
-  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/GenericHelpers.cs
-  artifactKey: Guid(7a6d986672e36de41ae856afa6efe124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/GenericHelpers.cs using Guid(7a6d986672e36de41ae856afa6efe124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1364218475020cc11e439ae31adcdc38') in 0.008004 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007609 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.340 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1340ms)
-		BeginReloadAssembly (191ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (41ms)
-		EndReloadAssembly (1026ms)
-			LoadAssemblies (146ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (433ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (376ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (74ms)
-				ProcessInitializeOnLoadAttributes (240ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.89 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3644 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (78.9 KB). Loaded Objects now: 4123.
-Memory consumption went from 123.0 MB to 123.0 MB.
-Total: 3.518900 ms (FindLiveObjects: 0.362000 ms CreateObjectMapping: 0.188800 ms MarkObjects: 2.845600 ms  DeleteObjects: 0.120700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 135.926055 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Behaviours/DisposableExtensions.cs
-  artifactKey: Guid(324c9ecfe26c3c84f808c17b9ac7d811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Behaviours/DisposableExtensions.cs using Guid(324c9ecfe26c3c84f808c17b9ac7d811) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95eb5228b011182dce3ecbe4804845d7') in 0.013705 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.582038 seconds.
-  path: Assets/Plugins/UniRx/Scripts/Disposables/DisposableExtensions.cs
-  artifactKey: Guid(9c4757265ae105441bae71007cbd0184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/UniRx/Scripts/Disposables/DisposableExtensions.cs using Guid(9c4757265ae105441bae71007cbd0184) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b9a6758ec0fde13c618e4eb1fbb9d6') in 0.002992 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 90.146871 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/EventSubject.cs
-  artifactKey: Guid(4667ebbf8357eb44f95a50b31a627f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/EventSubject.cs using Guid(4667ebbf8357eb44f95a50b31a627f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79536981091c67429dc20c262f1523be') in 0.008376 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.291499 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/EventSubjectSource.cs
-  artifactKey: Guid(d5fde450767dbba47b115b28fd8e995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/EventSubjectSource.cs using Guid(d5fde450767dbba47b115b28fd8e995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54d7f8f11e013bd2f7d785056a82c8f1') in 0.007735 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.246841 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/IEventSubject.cs
-  artifactKey: Guid(c39365e5239d27c4ca3a301b5a7b7b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/IEventSubject.cs using Guid(c39365e5239d27c4ca3a301b5a7b7b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0c7385ec181047f139501e5e6be321') in 0.011249 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009130 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.438 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1439ms)
-		BeginReloadAssembly (243ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (956ms)
-			LoadAssemblies (193ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (349ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (379ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (73ms)
-				ProcessInitializeOnLoadAttributes (250ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3643 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 17 unused Assets / (79.0 KB). Loaded Objects now: 4125.
-Memory consumption went from 123.0 MB to 122.9 MB.
-Total: 3.925400 ms (FindLiveObjects: 0.360400 ms CreateObjectMapping: 0.256600 ms MarkObjects: 3.176600 ms  DeleteObjects: 0.130400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006749 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.315 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1316ms)
-		BeginReloadAssembly (195ms)
+	ReloadAssembly (1407ms)
+		BeginReloadAssembly (164ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (39ms)
-		EndReloadAssembly (981ms)
-			LoadAssemblies (155ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (1104ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (395ms)
+			SetupTypeCache (371ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (387ms)
+			RebuildScriptCaches (82ms)
+			SetupLoadedEditorAssemblies (483ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (27ms)
+				InitializePlatformSupportModulesInManaged (17ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (78ms)
-				ProcessInitializeOnLoadAttributes (248ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3643 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (78.9 KB). Loaded Objects now: 4128.
-Memory consumption went from 123.0 MB to 122.9 MB.
-Total: 3.457600 ms (FindLiveObjects: 0.422000 ms CreateObjectMapping: 0.248600 ms MarkObjects: 2.664200 ms  DeleteObjects: 0.121400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 202.369563 seconds.
-  path: Assets/SUHScripts/Components/StaticInstance/StaticIDMap.cs
-  artifactKey: Guid(c42cec1866138f142b067b1ed1eb791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/StaticInstance/StaticIDMap.cs using Guid(c42cec1866138f142b067b1ed1eb791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6808fa1cc031c360d07605d3bd9ba6e6') in 0.012223 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009212 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.439 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1441ms)
-		BeginReloadAssembly (289ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (51ms)
-		EndReloadAssembly (997ms)
-			LoadAssemblies (243ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (389ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (50ms)
-			SetupLoadedEditorAssemblies (390ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (255ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.10 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3643 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (78.9 KB). Loaded Objects now: 4131.
-Memory consumption went from 123.0 MB to 123.0 MB.
-Total: 3.267300 ms (FindLiveObjects: 0.304200 ms CreateObjectMapping: 0.206300 ms MarkObjects: 2.661900 ms  DeleteObjects: 0.080700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 26.259511 seconds.
-  path: Assets/SUHScripts/Components/StaticInstance/StaticObservable.cs
-  artifactKey: Guid(16455d4ad4aad5a4f933189a0976950f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/StaticInstance/StaticObservable.cs using Guid(16455d4ad4aad5a4f933189a0976950f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9940273e1f9088032ed12323f2e0e883') in 0.015984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.392691 seconds.
-  path: Assets/SUHScripts/Components/StaticInstance/StaticObservableSubject.cs
-  artifactKey: Guid(48351bae7a67469428350ee2dbc8dd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/StaticInstance/StaticObservableSubject.cs using Guid(48351bae7a67469428350ee2dbc8dd99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1375a7295be3312bb6abc66ad3bbde79') in 0.008401 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008028 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.378 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1379ms)
-		BeginReloadAssembly (227ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (1009ms)
-			LoadAssemblies (169ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (369ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (429ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (24ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (81ms)
-				ProcessInitializeOnLoadAttributes (291ms)
+				BeforeProcessingInitializeOnLoad (113ms)
+				ProcessInitializeOnLoadAttributes (320ms)
 				ProcessInitializeOnLoadMethodAttributes (28ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.08 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3641 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 18 unused Assets / (78.9 KB). Loaded Objects now: 4132.
-Memory consumption went from 123.0 MB to 122.9 MB.
-Total: 3.007600 ms (FindLiveObjects: 0.296800 ms CreateObjectMapping: 0.217300 ms MarkObjects: 2.414300 ms  DeleteObjects: 0.077800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005874 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file LoadedFromMemory doesn't match image D:\projects\GitHub\SimpleUnityHelperScripts\SimpleUnityHelperScripts\Library\PackageCache\com.unity.visualscripting@1.7.6\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.345 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1346ms)
-		BeginReloadAssembly (186ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1022ms)
-			LoadAssemblies (146ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (369ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (439ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (29ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (89ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (30ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3641 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 16 unused Assets / (78.9 KB). Loaded Objects now: 4135.
-Memory consumption went from 123.0 MB to 122.9 MB.
-Total: 3.807400 ms (FindLiveObjects: 0.387200 ms CreateObjectMapping: 0.209600 ms MarkObjects: 3.082600 ms  DeleteObjects: 0.126300 ms)
+Unloading 3645 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (112.1 KB). Loaded Objects now: 4107.
+Memory consumption went from 123.2 MB to 123.1 MB.
+Total: 3.290100 ms (FindLiveObjects: 0.364700 ms CreateObjectMapping: 0.279900 ms MarkObjects: 2.541900 ms  DeleteObjects: 0.102100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -894,1310 +165,205 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 219.249314 seconds.
-  path: Assets/SUHScripts/_UNNASSIGNED/SaveSystem/ISaveSystem.cs
-  artifactKey: Guid(7b542388bfcea3340bb11a9919c63173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/_UNNASSIGNED/SaveSystem/ISaveSystem.cs using Guid(7b542388bfcea3340bb11a9919c63173) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740cf31579841e039de456283fac4432') in 0.012999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002340 seconds.
-  path: Assets/SUHScripts/Data/Functional/Extensions/DelegateExtensions.cs
-  artifactKey: Guid(4b6f1ea88aa6b1545ba94e04e68ff56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Extensions/DelegateExtensions.cs using Guid(4b6f1ea88aa6b1545ba94e04e68ff56a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48d2ceefb582d7b6b19679419a18250a') in 0.005914 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AudioPool
-  artifactKey: Guid(d95314391b6105b478c80b24fb716c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AudioPool using Guid(d95314391b6105b478c80b24fb716c5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a955f3772490c2864a0d840b16e5b1') in 0.006070 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001909 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Models
-  artifactKey: Guid(ba4872f998189d84ebd02fc4371e5973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Models using Guid(ba4872f998189d84ebd02fc4371e5973) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a374253d0ff30b469387d11536dc00') in 0.006113 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.005157 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/IEnumerableExtensions.cs
-  artifactKey: Guid(ede4d1ba61e40074ba5745db7d7333d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/IEnumerableExtensions.cs using Guid(ede4d1ba61e40074ba5745db7d7333d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd682e45b2a65dc80ab639954a685c9ed') in 0.006729 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002559 seconds.
-  path: Assets/SUHScripts/Data/FTimer/FTimerTest/TestFtiemr.cs
-  artifactKey: Guid(7b4fb77685ce2264d8d170f47abc6e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/FTimer/FTimerTest/TestFtiemr.cs using Guid(7b4fb77685ce2264d8d170f47abc6e2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c35b94991e167be600f08b605f4a045a') in 0.007325 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002606 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/HashSetObjectPool.cs
-  artifactKey: Guid(0bfcd6650de3943489a681128c9ba18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/HashSetObjectPool.cs using Guid(0bfcd6650de3943489a681128c9ba18b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab8ad916cd22584fdaae8bb5bd50b94f') in 0.006396 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003519 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_ValveExt.cs
-  artifactKey: Guid(b3803c393ec3752449814cbb89fa8354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_ValveExt.cs using Guid(b3803c393ec3752449814cbb89fa8354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26aca916489d9738c43fe25de5447d9') in 0.005930 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003977 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_Ext.cs
-  artifactKey: Guid(c57f12991e20c0248a5fde723110b719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_Ext.cs using Guid(c57f12991e20c0248a5fde723110b719) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f4ab96858341e90551e43544190b94') in 0.005957 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003239 seconds.
-  path: Assets/SUHScripts/Utility/Math/CurveFunctions.cs
-  artifactKey: Guid(3a554516127728747b196a7cb6812415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/CurveFunctions.cs using Guid(3a554516127728747b196a7cb6812415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59da2df499e1aabd40042b5a69f480bb') in 0.008406 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004053 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/IRequestSubject.cs
-  artifactKey: Guid(fbcfc66a41ef487428f487707f506b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/IRequestSubject.cs using Guid(fbcfc66a41ef487428f487707f506b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c039b62eb8000e6e7ddaeeade1493943') in 0.006467 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001649 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepState
-  artifactKey: Guid(70fd0f39e0d53a4498e71f401d0b6abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepState using Guid(70fd0f39e0d53a4498e71f401d0b6abd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e20ce15a651b99871e5199889388e5') in 0.006678 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001362 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/2D
-  artifactKey: Guid(83a8c679ac0d1d24ba95a95d1e07d81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/2D using Guid(83a8c679ac0d1d24ba95a95d1e07d81e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2f029132165f4a6b02c3a4cfbfd4cf') in 0.006977 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000902 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/3D
-  artifactKey: Guid(36b135ad7c6813b4ba57453cf5b8237d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/3D using Guid(36b135ad7c6813b4ba57453cf5b8237d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d34224a03fde1e4ba18e82368d6d024') in 0.005899 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003735 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/EventWrapperSubject.cs
-  artifactKey: Guid(cbf814b59917561409ae9b1b0892df80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/EventWrapperSubject.cs using Guid(cbf814b59917561409ae9b1b0892df80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b057108c629b375c701a16a067765e') in 0.006503 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002902 seconds.
+  Time since last request: 1114088.817545 seconds.
   path: Assets/SUHScripts/_UNNASSIGNED/StringReadOnlyValueSO.cs
   artifactKey: Guid(a53ffd6aa4dfe2041a9e8ec9a6af7f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/_UNNASSIGNED/StringReadOnlyValueSO.cs using Guid(a53ffd6aa4dfe2041a9e8ec9a6af7f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '283219900771214792fa522f9bd28183') in 0.006599 seconds 
+Start importing Assets/SUHScripts/_UNNASSIGNED/StringReadOnlyValueSO.cs using Guid(a53ffd6aa4dfe2041a9e8ec9a6af7f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58d0663c9cb46ce60a33f5c576fc6f8c') in 0.042358 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003660 seconds.
-  path: Assets/SUHScripts/Components/Debugging/DrawBoxByScale.cs
-  artifactKey: Guid(cc0f0a8d3b2595f43a8e38c685e2dac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Debugging/DrawBoxByScale.cs using Guid(cc0f0a8d3b2595f43a8e38c685e2dac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a591d32feb09a10a403911b6fdffb8a') in 0.006449 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001491 seconds.
-  path: Assets/SUHScripts/Utility/PhysicsCasting
-  artifactKey: Guid(b615947e5ef58e2488376ffb261acdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/PhysicsCasting using Guid(b615947e5ef58e2488376ffb261acdad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c37df5fe4acc34c4543311898ca6e274') in 0.006221 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004287 seconds.
+  Time since last request: 0.015157 seconds.
   path: Assets/SUHScripts/Components/State/StateBinder.cs
   artifactKey: Guid(54c1f2fe69bb7b24c92db3db293561f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/StateBinder.cs using Guid(54c1f2fe69bb7b24c92db3db293561f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75026de626edd58084856985745259aa') in 0.003122 seconds 
+Start importing Assets/SUHScripts/Components/State/StateBinder.cs using Guid(54c1f2fe69bb7b24c92db3db293561f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '998f325ff19eff4d1c366300db610820') in 0.006491 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003289 seconds.
+  Time since last request: 0.003252 seconds.
   path: Assets/SUHScripts/RX_EXT/Collision/2D/A_ColliderObservable2D.cs
   artifactKey: Guid(228cd75f5f8f1cd49b893c4acc78e6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/2D/A_ColliderObservable2D.cs using Guid(228cd75f5f8f1cd49b893c4acc78e6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7234d5b201e2c43a486f6c1f74ea840b') in 0.006193 seconds 
+Start importing Assets/SUHScripts/RX_EXT/Collision/2D/A_ColliderObservable2D.cs using Guid(228cd75f5f8f1cd49b893c4acc78e6ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a8cf9fe54a9d8a6acf48e5dd3adffd') in 0.005990 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004684 seconds.
-  path: Assets/SUHScripts/Components/Debugging/TestCameraLook.cs
-  artifactKey: Guid(b2f052fbdd8eb844399ca5845aefe0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Debugging/TestCameraLook.cs using Guid(b2f052fbdd8eb844399ca5845aefe0d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fe24b47553fadbe568647daa0b7496a') in 0.007254 seconds 
+  Time since last request: 0.085886 seconds.
+  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/CustomAnimationEventObserver.cs
+  artifactKey: Guid(020ae36dd060695418beec505a26d00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/CustomAnimationEventObserver.cs using Guid(020ae36dd060695418beec505a26d00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b337532714c78f6798d0db6705ac619c') in 0.005915 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004754 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepState/CompositeDepStateBuilder.cs
-  artifactKey: Guid(76928ae5ec9622646bf52a0d53752fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepState/CompositeDepStateBuilder.cs using Guid(76928ae5ec9622646bf52a0d53752fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f9e52f03a204340109acf3863386cf') in 0.006351 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.007377 seconds.
-  path: Assets/SUHScripts/Components/State/IState.cs
-  artifactKey: Guid(fa9f6817ce5b7eb4a95bbd7d04e80b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/IState.cs using Guid(fa9f6817ce5b7eb4a95bbd7d04e80b6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0483368291bbcd1cd3ebd97002264b') in 0.006173 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004129 seconds.
-  path: Assets/SUHScripts/RX_EXT/OffsetProvision/Tests/TEST_LocalOffsetProvider.cs
-  artifactKey: Guid(6a400c9b5e35cf947873eaeffcf9521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/OffsetProvision/Tests/TEST_LocalOffsetProvider.cs using Guid(6a400c9b5e35cf947873eaeffcf9521d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fa2d8c3d30df070a8445d656e3f8e65') in 0.006972 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003842 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_OBV_CommandChain.cs
-  artifactKey: Guid(7051c8463bc4a9d4f8ba9be488d481e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_OBV_CommandChain.cs using Guid(7051c8463bc4a9d4f8ba9be488d481e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '599089927920891e6c5538830ec1928b') in 0.009187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations
-  artifactKey: Guid(c8a3826fb797462498e1f5c596e79379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations using Guid(c8a3826fb797462498e1f5c596e79379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a57569c00f53d7c418a87b1a6a65ea5') in 0.007187 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001834 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Option/Option.cs
-  artifactKey: Guid(1b413c823f66e35469f132daad517297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Option/Option.cs using Guid(1b413c823f66e35469f132daad517297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0645225aeed9c47e03d56e854587713') in 0.009073 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SUHScripts/Data/TransformIdentity
-  artifactKey: Guid(7cd6e047233ec1e4a9084fb0e7b48ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/TransformIdentity using Guid(7cd6e047233ec1e4a9084fb0e7b48ff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e91eaf0648e3984274db7bcfd2bb36a') in 0.009282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001094 seconds.
-  path: Assets/SUHScripts/RX_EXT/CustomObservables/CustomObservables.cs
-  artifactKey: Guid(a4747f8e403e1724ea4b26bc119c4902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/CustomObservables/CustomObservables.cs using Guid(a4747f8e403e1724ea4b26bc119c4902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4161eab0b5bd06015092b780a66da726') in 0.008037 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003721 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_CommandChain.cs
-  artifactKey: Guid(0d5c00861328b5d479002fb5d41f0cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_CommandChain.cs using Guid(0d5c00861328b5d479002fb5d41f0cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f40a6038f89b7660ed86b64359b2e9c') in 0.006613 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/SUHScripts/RX_EXT/OffsetProvision
-  artifactKey: Guid(6b0f25a40162b704ca90568d0d45dff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/OffsetProvision using Guid(6b0f25a40162b704ca90568d0d45dff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28639c08dd8ede7a092191f2e1f878e') in 0.007515 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002188 seconds.
-  path: Assets/SUHScripts/Utility/PhysicsCasting/PhysicsCasting.cs
-  artifactKey: Guid(d89c3c58f0532bb45b2c134a74bfadec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/PhysicsCasting/PhysicsCasting.cs using Guid(d89c3c58f0532bb45b2c134a74bfadec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cea7f1e1e923904be0a44e90751eef45') in 0.002254 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.011226 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/ADependencySourceMono.cs
-  artifactKey: Guid(67dfd0ede0d3d01499f5050d30d712d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/ADependencySourceMono.cs using Guid(67dfd0ede0d3d01499f5050d30d712d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '581bf8f22abf4e5a3b9e5373390a970d') in 0.007771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.008126 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/IEventWrapper.cs
-  artifactKey: Guid(7e1f1a7a1cd8f124ab68c55bc163f377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/IEventWrapper.cs using Guid(7e1f1a7a1cd8f124ab68c55bc163f377) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0adda81d0ccebfb937f1eb7e57013e9b') in 0.007019 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004450 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Option/None.cs
-  artifactKey: Guid(a5fae491c66a6da45b2032583a2280f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Option/None.cs using Guid(a5fae491c66a6da45b2032583a2280f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '020dbf464f01dfbe320f1c858c57766a') in 0.006543 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003725 seconds.
-  path: Assets/SUHScripts/Data/FTimer/FTimer.cs
-  artifactKey: Guid(3671677518d89a140a84c83c697ae3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/FTimer/FTimer.cs using Guid(3671677518d89a140a84c83c697ae3bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bcfb63a3e54d161a8a133478fbcea27') in 0.006671 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002805 seconds.
-  path: Assets/SUHScripts/Data/Functional/Extensions/Functional.cs
-  artifactKey: Guid(93467bc6a4644d44db04d74196bc8522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Extensions/Functional.cs using Guid(93467bc6a4644d44db04d74196bc8522) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c39b5450c889c50877e6924a3d4ab46') in 0.007724 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003199 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Either/Left.cs
-  artifactKey: Guid(a947162686da1644d8227335298d6f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Either/Left.cs using Guid(a947162686da1644d8227335298d6f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7298726d30e9e54158b4bc6a5ff422d8') in 0.006316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002338 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Test/ScannerTest.cs
-  artifactKey: Guid(125227a85860989449a233d45844737a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Test/ScannerTest.cs using Guid(125227a85860989449a233d45844737a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5debdea8628380498a89a325f7dc1d69') in 0.006424 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000390 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Behaviours
-  artifactKey: Guid(c9b4c5f2f07a13d4a9de6df068271810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Behaviours using Guid(c9b4c5f2f07a13d4a9de6df068271810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ad35f5ce6b5f0a1e8203b28b0042e0c') in 0.006276 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004186 seconds.
-  path: Assets/SUHScripts/Components/ReadWrite/FunctionClosureReadWriteValue.cs
-  artifactKey: Guid(c6aa0f0c275d03646842ec40016d0526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/FunctionClosureReadWriteValue.cs using Guid(c6aa0f0c275d03646842ec40016d0526) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11bbe4950d57da3442916e09cd5ab810') in 0.007563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002818 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/3D/Test/CollisionObservableTesting.cs
-  artifactKey: Guid(c670cb189da14ca45a2e984693767ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/3D/Test/CollisionObservableTesting.cs using Guid(c670cb189da14ca45a2e984693767ae9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3067d6d265a60bbf72b27cb5dedbacd') in 0.006203 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.006030 seconds.
-  path: Assets/SUHScripts/Utility/Credited/Editor
-  artifactKey: Guid(d524b2cf096f4d4428545f1c7f0d4985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Credited/Editor using Guid(d524b2cf096f4d4428545f1c7f0d4985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bef5982c818ed613f654026429251e2') in 0.007365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004045 seconds.
-  path: Assets/SUHScripts/Utility/Credited/Editor/PlayFromScene.cs
-  artifactKey: Guid(96b647984db910d4bad8a5565f36bafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Credited/Editor/PlayFromScene.cs using Guid(96b647984db910d4bad8a5565f36bafd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f22f7a7f63ba90153f6cb08e4fa8506c') in 0.006333 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.010727 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/3D/ColliderObservable.cs
-  artifactKey: Guid(1cb502e1c8792a040826a7de25034cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/3D/ColliderObservable.cs using Guid(1cb502e1c8792a040826a7de25034cfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4434d4e386b30667650011d509e0d0b7') in 0.006431 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004202 seconds.
-  path: Assets/SUHScripts/RX_EXT/OffsetProvision/Tests/TestLocalOffsetProvider.cs
-  artifactKey: Guid(11cf3655290e8524bb16f89c3734dfdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/OffsetProvision/Tests/TestLocalOffsetProvider.cs using Guid(11cf3655290e8524bb16f89c3734dfdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eda65979d9842d19decc2be33385652') in 0.006213 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.011301 seconds.
-  path: Assets/SUHScripts/Utility/Math/MathHelper.cs
-  artifactKey: Guid(d4eff31134765764b8f7c0915466d786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/MathHelper.cs using Guid(d4eff31134765764b8f7c0915466d786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07332ab76c4bd1ccc2b6cdb292df290f') in 0.006159 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004672 seconds.
-  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/TransformReduceLatestOffsetProxy.cs
-  artifactKey: Guid(ed3b26ce0d838a144aace8f3b0d78b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/TransformReduceLatestOffsetProxy.cs using Guid(ed3b26ce0d838a144aace8f3b0d78b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2fc0d514907c9a2ecf8b24f2964b4e') in 0.006342 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004163 seconds.
+  Time since last request: 0.137619 seconds.
   path: Assets/SUHScripts/_UNNASSIGNED/IDisposalSite.cs
   artifactKey: Guid(01d8f99686b268b4ca5904a9cf8861a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/_UNNASSIGNED/IDisposalSite.cs using Guid(01d8f99686b268b4ca5904a9cf8861a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e41fd729bdba4bb72c51235344f69f9a') in 0.005966 seconds 
+Start importing Assets/SUHScripts/_UNNASSIGNED/IDisposalSite.cs using Guid(01d8f99686b268b4ca5904a9cf8861a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '674d274d2beda6198f133b10d5d74915') in 0.006658 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003506 seconds.
-  path: Assets/SUHScripts/Data/FTimer/FTimerExtensions.cs
-  artifactKey: Guid(9f1a95dc921c6a947bfbfa44dc89f10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/FTimer/FTimerExtensions.cs using Guid(9f1a95dc921c6a947bfbfa44dc89f10c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0d0e14fa3d6e288f9cd977f2145812') in 0.007496 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002880 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AObjectPool.cs
-  artifactKey: Guid(2ba8d9535505d744e874d8bbe3eb6860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AObjectPool.cs using Guid(2ba8d9535505d744e874d8bbe3eb6860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7005554468473187a9e8a7ba91c77a40') in 0.006241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003478 seconds.
-  path: Assets/SUHScripts/Data/TransformIdentity/Test/zzTransformOrientation_TEST.cs
-  artifactKey: Guid(9dd8908cf4e1ade438a8cf40d0f878b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/TransformIdentity/Test/zzTransformOrientation_TEST.cs using Guid(9dd8908cf4e1ade438a8cf40d0f878b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9ce017d38fefc0133184ec4f5f86832') in 0.006235 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003398 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Either/Either.cs
-  artifactKey: Guid(ece0b3b623fe4ca48a0b9071b385375e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Either/Either.cs using Guid(ece0b3b623fe4ca48a0b9071b385375e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0369a59108cca735419d2ce729114384') in 0.006017 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002446 seconds.
+  Time since last request: 0.046898 seconds.
   path: Assets/SUHScripts/Components/Registry/IRegistry.cs
   artifactKey: Guid(0cc8e7d23c84fec4c832114a51d7eae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Registry/IRegistry.cs using Guid(0cc8e7d23c84fec4c832114a51d7eae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7f1f9438354077467462ff023d4e3f8') in 0.006537 seconds 
+Start importing Assets/SUHScripts/Components/Registry/IRegistry.cs using Guid(0cc8e7d23c84fec4c832114a51d7eae1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51e291ad863f0415fbb1afa59af9e02d') in 0.005354 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003134 seconds.
+  Time since last request: 0.002991 seconds.
   path: Assets/SUHScripts/Components/Transition/ATransitionMonoBehaviourSubject.cs
   artifactKey: Guid(f2b72c648c8a4ff4dbc08d8696ab5be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Transition/ATransitionMonoBehaviourSubject.cs using Guid(f2b72c648c8a4ff4dbc08d8696ab5be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c0165f9f1ace157bd9fe2476884d88') in 0.007107 seconds 
+Start importing Assets/SUHScripts/Components/Transition/ATransitionMonoBehaviourSubject.cs using Guid(f2b72c648c8a4ff4dbc08d8696ab5be5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989c1c22852123bc9a2e0b6908be83f1') in 0.006270 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003588 seconds.
-  path: Assets/SUHScripts/Utility/IndexUtility.cs
-  artifactKey: Guid(23ff0f75d538b9e4b9f3794d791afef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/IndexUtility.cs using Guid(23ff0f75d538b9e4b9f3794d791afef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1eb0b37d11275c4439225f8bf5209d') in 0.006546 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002449 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision
-  artifactKey: Guid(f67be8f1970ab3d4bab9d72fb1e2ab30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision using Guid(f67be8f1970ab3d4bab9d72fb1e2ab30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45bf593f77af0a22d2bc5638f5e8059') in 0.005772 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003267 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/RenderExt.cs
-  artifactKey: Guid(b84a2cef929c99d4387ad7146c75c91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/RenderExt.cs using Guid(b84a2cef929c99d4387ad7146c75c91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6b7c0b6e21ce1a53900278792c91186') in 0.006249 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003341 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_Inject.cs
-  artifactKey: Guid(e641e974669411a498e9a5fc162e1ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_Inject.cs using Guid(e641e974669411a498e9a5fc162e1ca3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '444dec40729f7e45f0bddc9e53d8f990') in 0.006360 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003923 seconds.
-  path: Assets/SUHScripts/Utility/PhysicsCasting/RaycastDataExt.cs
-  artifactKey: Guid(18b4a9ab47038a947b6a3bb8db3e53c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/PhysicsCasting/RaycastDataExt.cs using Guid(18b4a9ab47038a947b6a3bb8db3e53c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faaeac947acd3001c91948651e44cc56') in 0.006125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003288 seconds.
+  Time since last request: 0.034039 seconds.
   path: Assets/SUHScripts/RX_EXT/Collision/3D/CollisionObservableEffectOperations.cs
   artifactKey: Guid(0b67e3267149c204ca5436ec4ea3f2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/3D/CollisionObservableEffectOperations.cs using Guid(0b67e3267149c204ca5436ec4ea3f2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f9f780cf523ee43cc9beec252b9d264') in 0.006223 seconds 
+Start importing Assets/SUHScripts/RX_EXT/Collision/3D/CollisionObservableEffectOperations.cs using Guid(0b67e3267149c204ca5436ec4ea3f2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b03346f58a3cda4c94367a47e82dfa') in 0.006645 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003482 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/PrimitiveExt.cs
-  artifactKey: Guid(ffed0883c8f7c174f81ee7dc2c0b3bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/PrimitiveExt.cs using Guid(ffed0883c8f7c174f81ee7dc2c0b3bc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c128f0d7f305fb0f041bec40e2f803d4') in 0.006460 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/PrefabPool
-  artifactKey: Guid(44988176bb1fc474db795ebced227615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/PrefabPool using Guid(44988176bb1fc474db795ebced227615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd776db24d7dbc8a2bd8a6d2277fa8167') in 0.006147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004057 seconds.
+  Time since last request: 0.013474 seconds.
   path: Assets/SUHScripts/Components/ReadWrite/SimpleWriteValue.cs
   artifactKey: Guid(1212ca82ff4c35d4e9b2a754e4c66843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/SimpleWriteValue.cs using Guid(1212ca82ff4c35d4e9b2a754e4c66843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b5c11f22d50623cd9b284a876f1b25b') in 0.006624 seconds 
+Start importing Assets/SUHScripts/Components/ReadWrite/SimpleWriteValue.cs using Guid(1212ca82ff4c35d4e9b2a754e4c66843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f7fd4853572405918c19ebcd7d4ede') in 0.005993 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002403 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotRequestSO.cs
-  artifactKey: Guid(3bc2ce6022909244b9efa99a4b2929e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotRequestSO.cs using Guid(3bc2ce6022909244b9efa99a4b2929e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6b64eb6d8401dafe1bcf4d7145784ec') in 0.006127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.007695 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Either/Right.cs
-  artifactKey: Guid(0add513875c9ef2429579f3287534ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Either/Right.cs using Guid(0add513875c9ef2429579f3287534ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea705aa002c84def71838a6c054e26b8') in 0.006307 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003623 seconds.
-  path: Assets/SUHScripts/RX_EXT/OffsetProvision/OBV_TransformOffsetObserver.cs
-  artifactKey: Guid(ac621c57555a4104c8988095e16e2c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/OffsetProvision/OBV_TransformOffsetObserver.cs using Guid(ac621c57555a4104c8988095e16e2c65) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89ab3a49a45626b7a1e7c55a417c9bf7') in 0.005846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000998 seconds.
-  path: Assets/SUHScripts/Data/Ellipse
-  artifactKey: Guid(2ce87a6a503ab35408edeecfdad1a4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Ellipse using Guid(2ce87a6a503ab35408edeecfdad1a4ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd56995e707e8f189bd41817ccaf204') in 0.005969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003454 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Tag/DependencySourceTagContainer.cs
-  artifactKey: Guid(e33184bb094e26b478e99512e2a080bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Tag/DependencySourceTagContainer.cs using Guid(e33184bb094e26b478e99512e2a080bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527e0ea84cb11ade4b1bd08acfda5364') in 0.005763 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003312 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/2D/CollisionObservableEffectOperations2D.cs
-  artifactKey: Guid(6cdb2c08a4cb36b45b7c1b2da43b48c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/2D/CollisionObservableEffectOperations2D.cs using Guid(6cdb2c08a4cb36b45b7c1b2da43b48c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a0520c4f5a747b6a8e352c71b2ca84d') in 0.005784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002892 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Error/Error.cs
-  artifactKey: Guid(d3beb936968c18441b1d02bdadd1f033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Error/Error.cs using Guid(d3beb936968c18441b1d02bdadd1f033) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcdd8a6678c65fff7b4e9ef217b6283b') in 0.005764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001131 seconds.
-  path: Assets/SUHScripts/Utility
-  artifactKey: Guid(e6f8406ab0653d14990b9a46e52aa1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility using Guid(e6f8406ab0653d14990b9a46e52aa1d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2251621c9e57aa8345b92c3ad12cd71f') in 0.005515 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003035 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotRequestCompositeSO.cs
-  artifactKey: Guid(71a01666feefc9540bba4413e01106ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotRequestCompositeSO.cs using Guid(71a01666feefc9540bba4413e01106ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3deca84e970f5312f8fc082ec0d1c4bf') in 0.005599 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002966 seconds.
+  Time since last request: 0.064913 seconds.
   path: Assets/SUHScripts/Components/ReadWrite/IWriteValue.cs
   artifactKey: Guid(f3f5580f2bab46d469bdd34df51131d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/IWriteValue.cs using Guid(f3f5580f2bab46d469bdd34df51131d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a197d6ccf3ba03504f0e39f176ce8f72') in 0.005529 seconds 
+Start importing Assets/SUHScripts/Components/ReadWrite/IWriteValue.cs using Guid(f3f5580f2bab46d469bdd34df51131d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '589fc5c3cdfb8d5b2d0c47f8eb25b013') in 0.006126 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002973 seconds.
-  path: Assets/SUHScripts/IAction.cs
-  artifactKey: Guid(f07470182f6224f4bb8bfc382f2f9a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/IAction.cs using Guid(f07470182f6224f4bb8bfc382f2f9a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93c42fe812902f954a135052447e73c8') in 0.005666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003508 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Unit/Unit.cs
-  artifactKey: Guid(57cb063ab5cd84b48af0062077940e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Unit/Unit.cs using Guid(57cb063ab5cd84b48af0062077940e54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cee8f14b80a5a2d7b3932b79058f6904') in 0.005444 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001548 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests
-  artifactKey: Guid(cb91ebe356f2a8e41983e4c5a90353f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests using Guid(cb91ebe356f2a8e41983e4c5a90353f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b6b7027b544be6ab590868b651e05e') in 0.005714 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/SUHScripts/Utility/Math
-  artifactKey: Guid(c3d462697ae3ec04384864dc5c657e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math using Guid(c3d462697ae3ec04384864dc5c657e02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '081a7cc0b43a92ae02081773bc9dc3b3') in 0.005696 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000255 seconds.
-  path: Assets/SUHScripts/_UNNASSIGNED
-  artifactKey: Guid(0f4b77653369477449ecc46156b587da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/_UNNASSIGNED using Guid(0f4b77653369477449ecc46156b587da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7c4099fc65a13a4af1af84775d95b1') in 0.005751 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004435 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepAction/CompositeDependencySourceActionBuilder.cs
-  artifactKey: Guid(68121c4e838e4134aae306740682558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepAction/CompositeDependencySourceActionBuilder.cs using Guid(68121c4e838e4134aae306740682558b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41228cc3c5b6b4e4ad24032b0edf44c') in 0.006567 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.010788 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Validation/ValidationExtensions.cs
-  artifactKey: Guid(6214b65fe1f809c4788cb24c61fc3870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Validation/ValidationExtensions.cs using Guid(6214b65fe1f809c4788cb24c61fc3870) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9c0bf5dc2925585ca44821e885dc5d') in 0.006049 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003772 seconds.
-  path: Assets/SUHScripts/Utility/Math/Tests/OrthoNormalTest.cs
-  artifactKey: Guid(838611853351c314f952f2038fd24946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/Tests/OrthoNormalTest.cs using Guid(838611853351c314f952f2038fd24946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a109d49ca851a7da08274249f61b8784') in 0.005787 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001257 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/Test
-  artifactKey: Guid(7c0fd1a6fc2f74e46af94f912f973df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/Test using Guid(7c0fd1a6fc2f74e46af94f912f973df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a655e612f808fd8d8eeacb714d4bb3b9') in 0.006771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003910 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Option/OptionTypedExtensins.cs
-  artifactKey: Guid(f92403352ae3d9a40b8b97797495621a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Option/OptionTypedExtensins.cs using Guid(f92403352ae3d9a40b8b97797495621a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a8d4ea121e69193e6311565c97d2cc') in 0.005852 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002368 seconds.
-  path: Assets/SUHScripts/Utility/Math/Tests/RadialMenuTest.cs
-  artifactKey: Guid(b89b4e3ff317b0844980259dbbe56ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/Tests/RadialMenuTest.cs using Guid(b89b4e3ff317b0844980259dbbe56ebc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecb7eebc108dfc909d55100064ae2ed3') in 0.005825 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001382 seconds.
-  path: Assets/SUHScripts/Utility/Math/Tests
-  artifactKey: Guid(c87cbfe28a0c6794e82086f13a9a24dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/Tests using Guid(c87cbfe28a0c6794e82086f13a9a24dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfcab089c6b38f14b7384d6977ab2fc3') in 0.006261 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004443 seconds.
-  path: Assets/SUHScripts/Components/BoolState/BoolStateOperations.cs
-  artifactKey: Guid(92037556bd89f224a96cc42c25120279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/BoolState/BoolStateOperations.cs using Guid(92037556bd89f224a96cc42c25120279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3305423472e6a85b6efc0e99e2c32f32') in 0.007185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004584 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepState/IDepStateBuilder.cs
-  artifactKey: Guid(6b6dc6d13871ed444b4f44f748a7cc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepState/IDepStateBuilder.cs using Guid(6b6dc6d13871ed444b4f44f748a7cc44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a44f549ba9d5fad9663676751c96fa3') in 0.006577 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001189 seconds.
-  path: Assets/SUHScripts/Components/State
-  artifactKey: Guid(e6ff833e37623864c9e1aaf7444bc065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State using Guid(e6ff833e37623864c9e1aaf7444bc065) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8846ed746c63d9810b33177918166724') in 0.006390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004973 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/RequestSubject1.cs
-  artifactKey: Guid(19bdc6df92f851849a992fde963e23ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/RequestSubject1.cs using Guid(19bdc6df92f851849a992fde963e23ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac627b9876004edb9d97b0557298bd3') in 0.006255 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000988 seconds.
-  path: Assets/SUHScripts/Data
-  artifactKey: Guid(a36576bf843b3384fb3de2d9513e86e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data using Guid(a36576bf843b3384fb3de2d9513e86e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2586f0fcae54e42e10a73460b7c939a6') in 0.006409 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000955 seconds.
-  path: Assets/SUHScripts/Components/StaticInstance
-  artifactKey: Guid(c932e11b9b7144347bc617648f713e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/StaticInstance using Guid(c932e11b9b7144347bc617648f713e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2c82b4109384992e51aeb4e1574dabb') in 0.006282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.005328 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AudioPool/AAudioOneShotRequestSO.cs
-  artifactKey: Guid(cdb770771218a354bb63b5a75993a13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AudioPool/AAudioOneShotRequestSO.cs using Guid(cdb770771218a354bb63b5a75993a13f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83f19397b1c143576a9ed13672f13986') in 0.006222 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004400 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_FTimingExt.cs
-  artifactKey: Guid(522688461bdeb604f997502111f8a562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_FTimingExt.cs using Guid(522688461bdeb604f997502111f8a562) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e94e0464caf124862389b672094a42') in 0.006591 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004137 seconds.
+  Time since last request: 0.134363 seconds.
   path: Assets/SUHScripts/Components/State/IStateTypeBinder.cs
   artifactKey: Guid(7c2c9da12569ad9469981c2bef3138f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/IStateTypeBinder.cs using Guid(7c2c9da12569ad9469981c2bef3138f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce411b79501b3e682f0a9060d3c788e3') in 0.006164 seconds 
+Start importing Assets/SUHScripts/Components/State/IStateTypeBinder.cs using Guid(7c2c9da12569ad9469981c2bef3138f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9b3e67e7f91ff2d25884c2acef713e') in 0.005599 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000432 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepAction
-  artifactKey: Guid(579b367b90902804a82b20207875b2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepAction using Guid(579b367b90902804a82b20207875b2ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f6b9924de67407964fdeb0834851e10') in 0.006764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001172 seconds.
-  path: Assets/SUHScripts/Data/FTimer/FTimerTest
-  artifactKey: Guid(7cb797ca554a3b6488005c1d427b84d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/FTimer/FTimerTest using Guid(7cb797ca554a3b6488005c1d427b84d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ecc57b903c0e9aaac5502dbf746e0c4') in 0.005764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/SUHScripts/Components/BoolState
-  artifactKey: Guid(4a469364698b2784bb9f616acc544bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/BoolState using Guid(4a469364698b2784bb9f616acc544bfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372c29487aaa07b66c7ea459d58d8b94') in 0.006179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004213 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Validation/Invalid.cs
-  artifactKey: Guid(667b7d84e803d6441a176c2ac4f943a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Validation/Invalid.cs using Guid(667b7d84e803d6441a176c2ac4f943a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '896831b97cc28b9d147df445f6f75675') in 0.005981 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000823 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions
-  artifactKey: Guid(2369a323babc70f4fb1d2074f101d2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions using Guid(2369a323babc70f4fb1d2074f101d2e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da11c9b1c8e822be7f58546991649ec4') in 0.006451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003083 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Either/EitherHelpers.cs
-  artifactKey: Guid(d85cda4bc41d8c64794a98017c117f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Either/EitherHelpers.cs using Guid(d85cda4bc41d8c64794a98017c117f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfe88e875d8caf24c69d66cc0a8b2ad0') in 0.006151 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003447 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Models/DisposableValue.cs
-  artifactKey: Guid(1aa0e60aa1251af41b00a0ace7e79f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Models/DisposableValue.cs using Guid(1aa0e60aa1251af41b00a0ace7e79f8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2d8ae2b89ea1666b3c9f32f4855494') in 0.007323 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003730 seconds.
+  Time since last request: 0.039563 seconds.
   path: Assets/SUHScripts/Utility/BallisticsUtility.cs
   artifactKey: Guid(f3917fd2368f1264e9dc42eee3817efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/BallisticsUtility.cs using Guid(f3917fd2368f1264e9dc42eee3817efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c026ff8642f97048ee19e9a346f638b5') in 0.006076 seconds 
+Start importing Assets/SUHScripts/Utility/BallisticsUtility.cs using Guid(f3917fd2368f1264e9dc42eee3817efa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4836a23ce9c30fd582661ead080d4d3b') in 0.005567 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003969 seconds.
+  Time since last request: 0.030327 seconds.
   path: Assets/SUHScripts/Components/Registry/RegistryHashset.cs
   artifactKey: Guid(4ec271f92740af346933a0ae79d61e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Registry/RegistryHashset.cs using Guid(4ec271f92740af346933a0ae79d61e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8013647f7d338dbb85d28ffb5c3975') in 0.006408 seconds 
+Start importing Assets/SUHScripts/Components/Registry/RegistryHashset.cs using Guid(4ec271f92740af346933a0ae79d61e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c1d9d5e23eb71d50314e17ce9ca4c4') in 0.016037 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003860 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/Test/QuaternionExtensionsTest.cs
-  artifactKey: Guid(c735234d83f4e77468b392bf6165c63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/Test/QuaternionExtensionsTest.cs using Guid(c735234d83f4e77468b392bf6165c63f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a974f7155dcaa377128d25b5c9f72aa') in 0.006611 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002862 seconds.
-  path: Assets/SUHScripts/Components/State/ComposableState.cs
-  artifactKey: Guid(9105fd89508b53149a6f33b6c92a4366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/ComposableState.cs using Guid(9105fd89508b53149a6f33b6c92a4366) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25d4561a07e1a483209a3d57bca3adc5') in 0.005990 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004628 seconds.
-  path: Assets/SUHScripts/Utility/UnityObjectUtilities.cs
-  artifactKey: Guid(61198bd541dd5d141b476c150cf56465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/UnityObjectUtilities.cs using Guid(61198bd541dd5d141b476c150cf56465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c37c26ca856960c6040d1b0d6f78c469') in 0.006391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001169 seconds.
-  path: Assets/SUHScripts/RX_EXT/CustomObservables
-  artifactKey: Guid(26b620cbcd86bfc489341abf2200e14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/CustomObservables using Guid(26b620cbcd86bfc489341abf2200e14c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a918ee374e83f3614fbc5859ee7b8a78') in 0.002786 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003612 seconds.
-  path: Assets/SUHScripts/Data/RadialMenu/RadialMenuBehaviour.cs
-  artifactKey: Guid(0cc3adb6954ebdd4d9127612b74b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/RadialMenu/RadialMenuBehaviour.cs using Guid(0cc3adb6954ebdd4d9127612b74b1a79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '462b922eaca312231616f9b1d9924c43') in 0.006168 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.012655 seconds.
+  Time since last request: 0.043033 seconds.
   path: Assets/SUHScripts/Components/ReadWrite/SimpleReadValue.cs
   artifactKey: Guid(d1bc7c1013a1dcb4ebb836fb914341ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/SimpleReadValue.cs using Guid(d1bc7c1013a1dcb4ebb836fb914341ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4073b82bb8dd20eadd044c8bed4287be') in 0.006228 seconds 
+Start importing Assets/SUHScripts/Components/ReadWrite/SimpleReadValue.cs using Guid(d1bc7c1013a1dcb4ebb836fb914341ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a2b89de6e7e86973626ae224cb780e') in 0.005620 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004582 seconds.
-  path: Assets/SUHScripts/Utility/PhysicsCasting/RaycastData.cs
-  artifactKey: Guid(efd0ad1a2272965418c1611a13dc0191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/PhysicsCasting/RaycastData.cs using Guid(efd0ad1a2272965418c1611a13dc0191) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe35e65f7f6fe172191428d41151c72') in 0.007976 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001635 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Helpers/OptionalHelpers.cs
-  artifactKey: Guid(8e15f4fa9dcbd40488db1dddf1c4f015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Helpers/OptionalHelpers.cs using Guid(8e15f4fa9dcbd40488db1dddf1c4f015) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90dd3cfab56fcbe19cf4db493aa96831') in 0.006251 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001234 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Option
-  artifactKey: Guid(37a02cb3e2b2c644f88f61e9da590ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Option using Guid(37a02cb3e2b2c644f88f61e9da590ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea7e449996661ba19057f172739ae8b2') in 0.002470 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.012561 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Either/EitherExtensions.cs
-  artifactKey: Guid(14570fcceaadbeb47ae1903e52640f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Either/EitherExtensions.cs using Guid(14570fcceaadbeb47ae1903e52640f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b152189693041000ae476a96a517e9') in 0.003141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001017 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Test
-  artifactKey: Guid(7b510f0ca180c4d46a806830a2d99fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Test using Guid(7b510f0ca180c4d46a806830a2d99fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60a77c763a304db40d1dfd0f0125ab40') in 0.002692 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002688 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/PrefabPool/APrefabPool.cs
-  artifactKey: Guid(87d4bfe7016d82a418e7c25907d57e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/PrefabPool/APrefabPool.cs using Guid(87d4bfe7016d82a418e7c25907d57e9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2196348d5eefdd1ddb28ab9952ff2b0c') in 0.006371 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.012013 seconds.
+  Time since last request: 0.054974 seconds.
   path: Assets/SUHScripts/Components/NoiseOffsets/NoisePulse3D.cs
   artifactKey: Guid(d758a95641070b24684e5fade0e6063e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/NoiseOffsets/NoisePulse3D.cs using Guid(d758a95641070b24684e5fade0e6063e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '027ae8fa2aa424b8b5821033b00cb7b9') in 0.006405 seconds 
+Start importing Assets/SUHScripts/Components/NoiseOffsets/NoisePulse3D.cs using Guid(d758a95641070b24684e5fade0e6063e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9490284ad1c7397860188095f7f171') in 0.006561 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001125 seconds.
-  path: Assets/SUHScripts/Components/Registry
-  artifactKey: Guid(48c0493af47ed984bb1198f52ab520f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Registry using Guid(48c0493af47ed984bb1198f52ab520f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eee10e498947e8aa3608cbc62e1a8c6') in 0.006674 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004688 seconds.
+  Time since last request: 0.005815 seconds.
   path: Assets/SUHScripts/RX_EXT/Collision/2D/CollisionObservableEffectModels.cs
   artifactKey: Guid(8aaf5797d4a20954089593389586094e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/2D/CollisionObservableEffectModels.cs using Guid(8aaf5797d4a20954089593389586094e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ac75f584ea8a7ce81cf63135059dea') in 0.006722 seconds 
+Start importing Assets/SUHScripts/RX_EXT/Collision/2D/CollisionObservableEffectModels.cs using Guid(8aaf5797d4a20954089593389586094e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f80676c25539a18b696d27c86efb57') in 0.005851 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003711 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/3D/CollisionObservableEffectModels.cs
-  artifactKey: Guid(8eb63db4157b87346be97eb1aaead137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/3D/CollisionObservableEffectModels.cs using Guid(8eb63db4157b87346be97eb1aaead137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61994e972e90152ce52a8c02cdc8fe9f') in 0.002770 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002637 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/Vector3Extensions.cs
-  artifactKey: Guid(b3a7518a631469c4098af1f424f32f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/Vector3Extensions.cs using Guid(b3a7518a631469c4098af1f424f32f5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fc5d6dba0ff0be2518ebf12221cb85f') in 0.006559 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001301 seconds.
-  path: Assets/SUHScripts/RX_EXT/OffsetProvision/Tests
-  artifactKey: Guid(ec1999bd3b01e6e4bbb4ea72a3e6ac1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/OffsetProvision/Tests using Guid(ec1999bd3b01e6e4bbb4ea72a3e6ac1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d22cb6499dae99858136c7a56e5799') in 0.002755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000142 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Either
-  artifactKey: Guid(8265ddaaf4ecac94eb8a1fcfd64999c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Either using Guid(8265ddaaf4ecac94eb8a1fcfd64999c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815f350c06968331c2d877d3c3f47cb0') in 0.002580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004849 seconds.
-  path: Assets/SUHScripts/Components/BoolState/BoolState.cs
-  artifactKey: Guid(4cd5e7edc242dd745a7cc0fd4a0eaa08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/BoolState/BoolState.cs using Guid(4cd5e7edc242dd745a7cc0fd4a0eaa08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da47201348a04ff07e35f98bee3c72d1') in 0.002829 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000905 seconds.
-  path: Assets/SUHScripts/Data/RadialMenu
-  artifactKey: Guid(b6cd4dcdafd472e4bbdcf02121d5065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/RadialMenu using Guid(b6cd4dcdafd472e4bbdcf02121d5065a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b2c32644ef0911ed72bf8d3d565fb80') in 0.006447 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003681 seconds.
-  path: Assets/SUHScripts/Utility/Credited/Console.cs
-  artifactKey: Guid(91a50aac2c49cac4f8a94bf3b571315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Credited/Console.cs using Guid(91a50aac2c49cac4f8a94bf3b571315a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed1324928d5389e0c2471a1a6e5219cf') in 0.007370 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004167 seconds.
-  path: Assets/SUHScripts/Data/RadialMenu/M_RadialObject.cs
-  artifactKey: Guid(18b003c966a7d7b47b89dfedf3ff9370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/RadialMenu/M_RadialObject.cs using Guid(18b003c966a7d7b47b89dfedf3ff9370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef0b7b02fc97f7f3a0b266377b8a20fa') in 0.006382 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SUHScripts/Components/ReadWrite
-  artifactKey: Guid(340bc558d70338443ab4d222b99b488d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite using Guid(340bc558d70338443ab4d222b99b488d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34cbcb250d2a5396413cae836c30d871') in 0.006237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003845 seconds.
-  path: Assets/SUHScripts/_UNNASSIGNED/SaveSystem/SaveValue.cs
-  artifactKey: Guid(85fb0d19649b3a44d972a07b73467c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/_UNNASSIGNED/SaveSystem/SaveValue.cs using Guid(85fb0d19649b3a44d972a07b73467c6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265398178d4b516c2e81c5c586168de2') in 0.006160 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.009697 seconds.
+  Time since last request: 0.095095 seconds.
   path: Assets/SUHScripts/_UNNASSIGNED/DisposalSiteSubject.cs
   artifactKey: Guid(74e5d9d7c06539a4b93a34161f54a09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/_UNNASSIGNED/DisposalSiteSubject.cs using Guid(74e5d9d7c06539a4b93a34161f54a09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd667f4eeb570ed60b56b5c4e10fd9e7') in 0.005996 seconds 
+Start importing Assets/SUHScripts/_UNNASSIGNED/DisposalSiteSubject.cs using Guid(74e5d9d7c06539a4b93a34161f54a09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403537b284fc403b46e6ede4847d6428') in 0.014294 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004212 seconds.
+  Time since last request: 0.003249 seconds.
   path: Assets/SUHScripts/Components/ReadWrite/IReadValue.cs
   artifactKey: Guid(28301677050711c41bab6ea8886c9f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/IReadValue.cs using Guid(28301677050711c41bab6ea8886c9f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72aff8ec59372274b80585fa84f98295') in 0.006652 seconds 
+Start importing Assets/SUHScripts/Components/ReadWrite/IReadValue.cs using Guid(28301677050711c41bab6ea8886c9f02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3122b5c0486ca37cc6eb811f5c115d9') in 0.010111 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004385 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/Vector2Extensions.cs
-  artifactKey: Guid(162493f24b8506f44b31d0218312ffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/Vector2Extensions.cs using Guid(162493f24b8506f44b31d0218312ffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98af48953fe4c0474d636422a0cdd667') in 0.006244 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004610 seconds.
+  Time since last request: 0.021672 seconds.
   path: Assets/SUHScripts/Components/ReadWrite/ActionWriteValue.cs
   artifactKey: Guid(0983f0a0bdf43934bae4d3fe552a6fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/ActionWriteValue.cs using Guid(0983f0a0bdf43934bae4d3fe552a6fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c71dcc518f5dcb3bc836c82898f1e6f1') in 0.006687 seconds 
+Start importing Assets/SUHScripts/Components/ReadWrite/ActionWriteValue.cs using Guid(0983f0a0bdf43934bae4d3fe552a6fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f90728e190ef9a1ce019c885ed4c3df') in 0.005942 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003714 seconds.
-  path: Assets/SUHScripts/Data/Ellipse/Ellipse.cs
-  artifactKey: Guid(f683ab11a0d06324cbb334ca50ef4f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Ellipse/Ellipse.cs using Guid(f683ab11a0d06324cbb334ca50ef4f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c84cb046e0d034d48bab7c88bd868700') in 0.002758 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000709 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Unit
-  artifactKey: Guid(e9205accab2ade147a1953cae438bb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Unit using Guid(e9205accab2ade147a1953cae438bb34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3294aeff4e8f4190763783c5613d7e90') in 0.002425 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001158 seconds.
-  path: Assets/SUHScripts/Data/TransformIdentity/Test
-  artifactKey: Guid(4ebae2591a956444790b1a0a94472a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/TransformIdentity/Test using Guid(4ebae2591a956444790b1a0a94472a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d36d0e2a0dd2b24bc039fdfea5eecaa') in 0.002380 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003177 seconds.
+  Time since last request: 0.021038 seconds.
   path: Assets/SUHScripts/Utility/InterfaceUtils.cs
   artifactKey: Guid(2921ebf50a209784aa1ea86e33374028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/InterfaceUtils.cs using Guid(2921ebf50a209784aa1ea86e33374028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f853340f2ac569d6c95293dff72012e9') in 0.006159 seconds 
+Start importing Assets/SUHScripts/Utility/InterfaceUtils.cs using Guid(2921ebf50a209784aa1ea86e33374028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cb5d64ca6c35c3aed7c255c9e47eaf') in 0.006099 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Helpers
-  artifactKey: Guid(1516f037403ef99419bb177b23268500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Helpers using Guid(1516f037403ef99419bb177b23268500) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4eaf2e8d4702ef618e42bac74c5f450') in 0.006100 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.007796 seconds.
-  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/GizmoUse.cs
-  artifactKey: Guid(887782ab66bb4284685b040326b96e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/GizmoUse.cs using Guid(887782ab66bb4284685b040326b96e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78ebc88737f0005a13ce2c7636eb58e5') in 0.006465 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004149 seconds.
-  path: Assets/SUHScripts/Components/Debugging/TestInEditorHelper.cs
-  artifactKey: Guid(63525e7b8ef00404a9a0c373eced82b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Debugging/TestInEditorHelper.cs using Guid(63525e7b8ef00404a9a0c373eced82b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5703a0c32c35b6738d706bf44a89d0e0') in 0.005954 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004531 seconds.
-  path: Assets/SUHScripts/Utility/Math/Easing.cs
-  artifactKey: Guid(35281b4332adf0846b5a692033aeb698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/Easing.cs using Guid(35281b4332adf0846b5a692033aeb698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4019df556eeea1972c41259a644476a9') in 0.005703 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003458 seconds.
+  Time since last request: 0.059575 seconds.
   path: Assets/SUHScripts/Utility/Math/AngleHelpers.cs
   artifactKey: Guid(ee4f1e94b3f4f2c45830f48509449a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/AngleHelpers.cs using Guid(ee4f1e94b3f4f2c45830f48509449a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d6a963b621922df3fa31e3a8ca1c89c') in 0.006150 seconds 
+Start importing Assets/SUHScripts/Utility/Math/AngleHelpers.cs using Guid(ee4f1e94b3f4f2c45830f48509449a46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ec5529400114f83bc20595f7f5a977') in 0.005995 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000656 seconds.
-  path: Assets/SUHScripts/Components/NoiseOffsets
-  artifactKey: Guid(40b113fcbce49364c84446b5b0b235bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/NoiseOffsets using Guid(40b113fcbce49364c84446b5b0b235bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2544c6cc48f7186cd9654d3586c7401') in 0.006243 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003413 seconds.
-  path: Assets/SUHScripts/Components/Debugging/M_MonoEvent.cs
-  artifactKey: Guid(ac5fe1f1cb7c7e9448e60c7703790df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Debugging/M_MonoEvent.cs using Guid(ac5fe1f1cb7c7e9448e60c7703790df0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b554a493aef9fabbbc11811cdbd9fb') in 0.005984 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004623 seconds.
-  path: Assets/SUHScripts/Data/Functional/Extensions/GenericExtensions.cs
-  artifactKey: Guid(1dcf3f14668354c49bc7d2117e21e09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Extensions/GenericExtensions.cs using Guid(1dcf3f14668354c49bc7d2117e21e09e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca99d3947308f9d4eaf4c98036633e26') in 0.006130 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002971 seconds.
-  path: Assets/SUHScripts/Utility/PhysicsCasting/SphereCastData.cs
-  artifactKey: Guid(9280f8a4d046a5540843923506f3b206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/PhysicsCasting/SphereCastData.cs using Guid(9280f8a4d046a5540843923506f3b206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99585dc2f7c6613bfb9e99ffd12b23d3') in 0.005964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001270 seconds.
-  path: Assets/SUHScripts/Components/Debugging
-  artifactKey: Guid(0b8cfdc999afb7b488cdcacacc6d2bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Debugging using Guid(0b8cfdc999afb7b488cdcacacc6d2bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54f5d34a19df90a4b0f3885d2b236a3e') in 0.006176 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004475 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepAction/IDependencySourceActionBuilder.cs
-  artifactKey: Guid(87f4d238344b3e24486b380e85a6b06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepAction/IDependencySourceActionBuilder.cs using Guid(87f4d238344b3e24486b380e85a6b06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962aeb7b943ac0252055431b60e71aa0') in 0.006314 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.011349 seconds.
+  Time since last request: 0.062852 seconds.
   path: Assets/SUHScripts/Components/Transition/ATransitionMonoBehaviour.cs
   artifactKey: Guid(a25da8d2a0cbff845b26dc286865084e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Transition/ATransitionMonoBehaviour.cs using Guid(a25da8d2a0cbff845b26dc286865084e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624052d59b220b9df52cb078cd478fb9') in 0.006561 seconds 
+Start importing Assets/SUHScripts/Components/Transition/ATransitionMonoBehaviour.cs using Guid(a25da8d2a0cbff845b26dc286865084e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6b7387963c8bc68b389d609f953cd5e') in 0.005266 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002852 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Tag/DependencySourceTagSO.cs
-  artifactKey: Guid(75219003776e0594fba27c7f819e656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Tag/DependencySourceTagSO.cs using Guid(75219003776e0594fba27c7f819e656b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07bdd6c3e6d3c2bbc5e3f5acd7accaab') in 0.006501 seconds 
+  Time since last request: 0.135743 seconds.
+  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/EventSubjectSource.cs
+  artifactKey: Guid(d5fde450767dbba47b115b28fd8e995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/EventSubjectSource.cs using Guid(d5fde450767dbba47b115b28fd8e995c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88bd666cd5827393cc98beb0de0248cf') in 0.006280 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004558 seconds.
-  path: Assets/SUHScripts/Data/TransformIdentity/TransformOrientationOperations.cs
-  artifactKey: Guid(1cd5451be3825ee408dabc7bc69a17f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/TransformIdentity/TransformOrientationOperations.cs using Guid(1cd5451be3825ee408dabc7bc69a17f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '634b34f4c69d39cc3111746ffa28869f') in 0.006105 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003845 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Test/TEST_SingleSElect.cs
-  artifactKey: Guid(7009d2a9c5067d74caa213a3278f7bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Test/TEST_SingleSElect.cs using Guid(7009d2a9c5067d74caa213a3278f7bde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b40183c9ffa096dc65bd57e2bf9c51') in 0.006125 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001285 seconds.
-  path: Assets/SUHScripts/Data/Functional/Extensions
-  artifactKey: Guid(04939ffd33dd7044484bb9539e3a242e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Extensions using Guid(04939ffd33dd7044484bb9539e3a242e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '331485f1646feed47d2ba4896d213c9b') in 0.005804 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/3D/Test
-  artifactKey: Guid(cd570b8fd0501ff4385f003fba178b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/3D/Test using Guid(cd570b8fd0501ff4385f003fba178b95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1427c450def8f6858606550266619b67') in 0.002802 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.082295 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_EnterExit.cs
-  artifactKey: Guid(28fdae9d13ff99645b7381b426db040b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_EnterExit.cs using Guid(28fdae9d13ff99645b7381b426db040b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3d005ad3acf87fd436a64385c6c135') in 0.006130 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003397 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/PrefabPool/IPoolableComponent.cs
-  artifactKey: Guid(304601ce50a22cb4c94517acb6aa975a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/PrefabPool/IPoolableComponent.cs using Guid(304601ce50a22cb4c94517acb6aa975a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04bed99b84b729e78091d9d4bd8a0a07') in 0.007131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003956 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Tag/DependencySourceRequirements.cs
-  artifactKey: Guid(e7093076603e3d144a1567902bdd5b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Tag/DependencySourceRequirements.cs using Guid(e7093076603e3d144a1567902bdd5b17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48fcc1f8ff324aec0d0ea1190425ce95') in 0.006508 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001040 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Validation
-  artifactKey: Guid(6aef2d584e2e7b347a9c8c6326a1a830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Validation using Guid(6aef2d584e2e7b347a9c8c6326a1a830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9644d9ff8f7ec7d3e91b62760965992e') in 0.006390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004214 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/PrefabPool/HashSetPrefabPool.cs
-  artifactKey: Guid(19e7cd73094d2b642890abcb8834773b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/PrefabPool/HashSetPrefabPool.cs using Guid(19e7cd73094d2b642890abcb8834773b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '250d487a94039f66e94c68f72227bb27') in 0.006672 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.012313 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/DictionaryExtensions.cs
-  artifactKey: Guid(6ab993ce2b51b494e80c4aff17369174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/DictionaryExtensions.cs using Guid(6ab993ce2b51b494e80c4aff17369174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961129731178b329ce336fceab6b7dad') in 0.007003 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.034764 seconds.
-  path: Assets/SUHScripts/Components/M_DetachOnAwake.cs
-  artifactKey: Guid(98162ade1f7590549863c57329e7019f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/M_DetachOnAwake.cs using Guid(98162ade1f7590549863c57329e7019f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98a0473086910943c215cd7d418ca32') in 0.008748 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001451 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/ArrayExtensions.cs
-  artifactKey: Guid(dd737e009232e734d8fe0abc9cde46ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/ArrayExtensions.cs using Guid(dd737e009232e734d8fe0abc9cde46ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24da92b297bf88f5c44277db0af15671') in 0.006528 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.011407 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepAction/ADepActionBuilderSO.cs
-  artifactKey: Guid(49de64ddded314c41b728d4b77e11210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepAction/ADepActionBuilderSO.cs using Guid(49de64ddded314c41b728d4b77e11210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd195f06a86a952405862270153bb1520') in 0.005814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002416 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotPool.cs
-  artifactKey: Guid(56b867ce45bcd7c4db63f1a411546ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotPool.cs using Guid(56b867ce45bcd7c4db63f1a411546ec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59930e5fa409e59c5bd7d0ccbcc152ba') in 0.005800 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003416 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Validation/ValidationHellpers.cs
-  artifactKey: Guid(b63f5c5c510715740a96ca6a1b52ffa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Validation/ValidationHellpers.cs using Guid(b63f5c5c510715740a96ca6a1b52ffa5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11f5d937d17cdf3942c95bbd7629972e') in 0.005848 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003930 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/PendingObservableExtensions.cs
-  artifactKey: Guid(6038e47a0c31db24488f67bc51eafac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/PendingObservableExtensions.cs using Guid(6038e47a0c31db24488f67bc51eafac3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cffc0293e083f6532a92bfe911694b') in 0.005952 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000943 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Error
-  artifactKey: Guid(098306757a80725499cb367f6da4d00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Error using Guid(098306757a80725499cb367f6da4d00b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe1096703c6f1083b7db1435c7cb445') in 0.002292 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002772 seconds.
-  path: Assets/SUHScripts/Components/BoolState/FrameStateOperations.cs
-  artifactKey: Guid(7028504ffb1ddc840ac4573104dce195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/BoolState/FrameStateOperations.cs using Guid(7028504ffb1ddc840ac4573104dce195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65810c3a5533b920001ee2d9a622460b') in 0.005970 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000773 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing
-  artifactKey: Guid(6448dde762414d041b6a0f34b85e8c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing using Guid(6448dde762414d041b6a0f34b85e8c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b06449e3f450d1d6ca4112a7ad9bf5e4') in 0.006881 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003677 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/QuaternionExt.cs
-  artifactKey: Guid(2a3dea38f2ad287458a070473c7a8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/QuaternionExt.cs using Guid(2a3dea38f2ad287458a070473c7a8580) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1486e998563010ff36ce73b88ca6c15d') in 0.007258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.010694 seconds.
-  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/ReduceLatestProxy.cs
-  artifactKey: Guid(3af88c022d054a64187e5acf6169d687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/ReduceLatestProxy.cs using Guid(3af88c022d054a64187e5acf6169d687) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1a103daa0193eee19479c186dab5f7') in 0.008075 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003224 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Option/Some.cs
-  artifactKey: Guid(985e51209065dc546a53c148b0c8ed6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Option/Some.cs using Guid(985e51209065dc546a53c148b0c8ed6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2bb660f558e1211c22baac77bf35f4') in 0.006292 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003757 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotRequestRandomSO.cs
-  artifactKey: Guid(1e89ef8cac349704db576300953d8e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AudioPool/AudioOneShotRequestRandomSO.cs using Guid(1e89ef8cac349704db576300953d8e5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31dd3d11fa2f7dab9bd2f8bae33afa85') in 0.006007 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004406 seconds.
+  Time since last request: 0.109079 seconds.
   path: Assets/SUHScripts/Components/NoiseOffsets/NoiseConstant.cs
   artifactKey: Guid(54b17d3c19fce3d47aac2f36de56bb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/NoiseOffsets/NoiseConstant.cs using Guid(54b17d3c19fce3d47aac2f36de56bb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055f792f10571d4eadc2d33abf341467') in 0.005795 seconds 
+Start importing Assets/SUHScripts/Components/NoiseOffsets/NoiseConstant.cs using Guid(54b17d3c19fce3d47aac2f36de56bb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af90958df8fea8eacc8344d7f2b3a444') in 0.005487 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.009993 seconds.
-  path: Assets/SUHScripts/RX_EXT/Collision/3D/AColliderObservable.cs
-  artifactKey: Guid(7960b57f601353b469ec810c04e35c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/3D/AColliderObservable.cs using Guid(7960b57f601353b469ec810c04e35c5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1d8cc40bba2568466984821b9532e3c') in 0.005978 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001525 seconds.
-  path: Assets/SUHScripts/Utility/Credited
-  artifactKey: Guid(b191004c8bf2d484aa60f7effdaf6df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Credited using Guid(b191004c8bf2d484aa60f7effdaf6df7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0caa5bb036fa721f72fcc58884bc6dec') in 0.005722 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002903 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Option/OptionExtensions.cs
-  artifactKey: Guid(3e767da9dc4b2be43b06778cc0cfe823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Option/OptionExtensions.cs using Guid(3e767da9dc4b2be43b06778cc0cfe823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abadf2b543cf37d5819881de6412c6bc') in 0.005555 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003046 seconds.
+  Time since last request: 0.045637 seconds.
   path: Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_SingleSelectExt.cs
   artifactKey: Guid(106d2632c41d8de4f8433ba1f5d93845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_SingleSelectExt.cs using Guid(106d2632c41d8de4f8433ba1f5d93845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b62be7de87b63247c79117ba8a624830') in 0.005795 seconds 
+Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/OBV_SingleSelectExt.cs using Guid(106d2632c41d8de4f8433ba1f5d93845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd387ffc69873f769486f276c32277f6') in 0.008721 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001786 seconds.
-  path: Assets/SUHScripts/Utility/Extensions/ListExtensions.cs
-  artifactKey: Guid(b85b830bb7c42424db2b71a9679b5d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions/ListExtensions.cs using Guid(b85b830bb7c42424db2b71a9679b5d70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29e3fd78eb9b60f863343f121b3e6ec4') in 0.005646 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003121 seconds.
-  path: Assets/SUHScripts/Utility/Math/Interpolation.cs
-  artifactKey: Guid(d4e8d7f24295e914abd2e43316ff70e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/Interpolation.cs using Guid(d4e8d7f24295e914abd2e43316ff70e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b629c23ea698c1bf18999f2bc7cbb10') in 0.006083 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003653 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DepState/ADepStateBuilderMono.cs
-  artifactKey: Guid(dcbda8737a6be664e97eacd3e2f99f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DepState/ADepStateBuilderMono.cs using Guid(dcbda8737a6be664e97eacd3e2f99f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be5bebb5fafde43be0df32d594e8ada6') in 0.006337 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003762 seconds.
-  path: Assets/SUHScripts/Utility/UIUtilities.cs
-  artifactKey: Guid(61a625a137b62d945932f773b254757a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/UIUtilities.cs using Guid(61a625a137b62d945932f773b254757a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590471b4e2d1a58edd1c457bd7ee174d') in 0.006480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003080 seconds.
-  path: Assets/SUHScripts/Data/TransformIdentity/TransformOrientation.cs
-  artifactKey: Guid(77049955610d31f4facad3eccafc6926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/TransformIdentity/TransformOrientation.cs using Guid(77049955610d31f4facad3eccafc6926) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75a85671054ca6bc07013da607d2a9a') in 0.006342 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003079 seconds.
-  path: Assets/SUHScripts/Data/RadialMenu/TEST_RadialMenuBehaviour.cs
-  artifactKey: Guid(bda119627aa62de4f88e0659dd518683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/RadialMenu/TEST_RadialMenuBehaviour.cs using Guid(bda119627aa62de4f88e0659dd518683) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f619a6e97e2e5c2a26c47cbf247e50a') in 0.006686 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.008895 seconds.
+  Time since last request: 0.063051 seconds.
   path: Assets/SUHScripts/Components/ReadWrite/SimpleReadWriteValue.cs
   artifactKey: Guid(4a2ea2650151088479379bf013827fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/SimpleReadWriteValue.cs using Guid(4a2ea2650151088479379bf013827fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32c0c264e44331a1ae58f1104ebb2731') in 0.005732 seconds 
+Start importing Assets/SUHScripts/Components/ReadWrite/SimpleReadWriteValue.cs using Guid(4a2ea2650151088479379bf013827fad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efc75fecb54360d32c78f95ddac30ff') in 0.005803 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.005166 seconds.
-  path: Assets/SUHScripts/Utility/Credited/DrawArrow.cs
-  artifactKey: Guid(023c682c7cd57c64aa81191ccfe93cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Credited/DrawArrow.cs using Guid(023c682c7cd57c64aa81191ccfe93cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cd680fbe06f2a1461418d7875d12e5') in 0.006113 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003541 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Validation/Validation.cs
-  artifactKey: Guid(1c298d833a950e04a96a3de394785539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Validation/Validation.cs using Guid(1c298d833a950e04a96a3de394785539) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b7c3cd2db91f8cb960b6bb9194d579') in 0.002686 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003994 seconds.
+  Time since last request: 0.017453 seconds.
   path: Assets/SUHScripts/Components/Transition/TransitionUISimple.cs
   artifactKey: Guid(fb29a3f79afa40642ba7f39afc7c9810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Transition/TransitionUISimple.cs using Guid(fb29a3f79afa40642ba7f39afc7c9810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83403cf018bf933460c33faa371009cc') in 0.006255 seconds 
+Start importing Assets/SUHScripts/Components/Transition/TransitionUISimple.cs using Guid(fb29a3f79afa40642ba7f39afc7c9810) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a5906692f6a60910e3929d71b846585') in 0.006385 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.003856 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling/AudioPool/AAudioOneShotPool.cs
-  artifactKey: Guid(f5897ed0b112a0249b10dc97a9d11feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling/AudioPool/AAudioOneShotPool.cs using Guid(f5897ed0b112a0249b10dc97a9d11feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adee08a7e07f557b819580b3e146e3be') in 0.007128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000807 seconds.
-  path: Assets/SUHScripts/Utility/Extensions
-  artifactKey: Guid(c4431dac737043244960a19f7263506d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Extensions using Guid(c4431dac737043244960a19f7263506d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '595a6907562c020dc290e7cf77a3bc9b') in 0.002661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003223 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/EventWrapper.cs
-  artifactKey: Guid(2f4459de98bf2c845aa7f88d27811a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/EventWrapper.cs using Guid(2f4459de98bf2c845aa7f88d27811a00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7d4d08b9dc7ef8501e44caf530f6c9') in 0.006665 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003533 seconds.
+  Time since last request: 0.035101 seconds.
   path: Assets/SUHScripts/Components/ReadWrite/FunctionReadValue.cs
   artifactKey: Guid(e2c0908a0a2bc6c4fba25e265dfb20ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/FunctionReadValue.cs using Guid(e2c0908a0a2bc6c4fba25e265dfb20ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e3b877badc485ab67229a8ab5eb7c9') in 0.006656 seconds 
+Start importing Assets/SUHScripts/Components/ReadWrite/FunctionReadValue.cs using Guid(e2c0908a0a2bc6c4fba25e265dfb20ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8ae8b63a02550962cca07e2da24d352') in 0.017628 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000846 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Tag
-  artifactKey: Guid(80194bea223bd454eb28d6a8d9e2dcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Tag using Guid(80194bea223bd454eb28d6a8d9e2dcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '756dfdc2d17e05b368bccd2ddc26b918') in 0.006006 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003438 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_FirstCompleted.cs
-  artifactKey: Guid(d0f0601cc84a7b14ca7e758eb82b15b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_FirstCompleted.cs using Guid(d0f0601cc84a7b14ca7e758eb82b15b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a4cb1de42da71f53bc2150342962487') in 0.007614 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003884 seconds.
-  path: Assets/SUHScripts/Components/State/StateMachine.cs
-  artifactKey: Guid(63b62b73a7ccfa449b110a75ef28cddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/StateMachine.cs using Guid(63b62b73a7ccfa449b110a75ef28cddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d7bddbb9ce529ead3c73b5182026695') in 0.005621 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002234 seconds.
-  path: Assets/SUHScripts/Components/State/State.cs
-  artifactKey: Guid(7d8fe480949a5524a8c9402738400279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/State.cs using Guid(7d8fe480949a5524a8c9402738400279) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c07187d68f027657d367d681659c763e') in 0.002713 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.002326 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_TestTakeDuring.cs
-  artifactKey: Guid(b400456ca21313c4d9ab91f58c0cd4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Operations/Testing/TEST_TestTakeDuring.cs using Guid(b400456ca21313c4d9ab91f58c0cd4dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e9952cbf7d19be4cf9ee20f39c63cdc') in 0.006321 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.008966 seconds.
-  path: Assets/SUHScripts/Components/StaticInstance/StaticInstance.cs
-  artifactKey: Guid(983235d5ca8a46a4aa13372b92b6f36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/StaticInstance/StaticInstance.cs using Guid(983235d5ca8a46a4aa13372b92b6f36e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2216fbfb481d1ca98786ad4db05e197') in 0.002118 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.001195 seconds.
-  path: Assets/SUHScripts/Components/Transition
-  artifactKey: Guid(295a5f899ebaba548a25c5eec78f2640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Transition using Guid(295a5f899ebaba548a25c5eec78f2640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91dfc6e4a34f6096ab270774b333f32f') in 0.006237 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.008926 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types/Error/ErrorExtensions.cs
-  artifactKey: Guid(94ffc63fa28f5da48b5302fcc9377c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types/Error/ErrorExtensions.cs using Guid(94ffc63fa28f5da48b5302fcc9377c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796f356e2cf2adaf48253f8b2b6a931f') in 0.006401 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003630 seconds.
-  path: Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjector.cs
-  artifactKey: Guid(ca0dbfaf5b5c2cc4dac6df4c6cd233a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/DependencySource/DependencySource/Unity/DependencySourceSubjectInjector.cs using Guid(ca0dbfaf5b5c2cc4dac6df4c6cd233a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1f072fea0a333a778683563fc5f960b') in 0.002412 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.005007 seconds.
+  Time since last request: 0.119753 seconds.
   path: Assets/SUHScripts/Components/Registry/RegistryList.cs
   artifactKey: Guid(1cd249280f1eba14f99bbd48b362174d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/Registry/RegistryList.cs using Guid(1cd249280f1eba14f99bbd48b362174d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b75d9120ac97585165e6f16ff8e398') in 0.006012 seconds 
+Start importing Assets/SUHScripts/Components/Registry/RegistryList.cs using Guid(1cd249280f1eba14f99bbd48b362174d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f5d313c11c43f1d929e67e63df08b7') in 0.005867 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.016987 seconds.
-  path: Assets/SUHScripts/RX_EXT/Extensions/Behaviours/SubjectExtensions.cs
-  artifactKey: Guid(29fabfb958176f44dae3184015e48c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Extensions/Behaviours/SubjectExtensions.cs using Guid(29fabfb958176f44dae3184015e48c19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5daaf3df3e0f4698cdecf0e6f979b94c') in 0.006551 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.011251 seconds.
-  path: Assets/SUHScripts/Utility/Math/Radial.cs
-  artifactKey: Guid(b576b39688666f7498e1393efa35a1ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/Math/Radial.cs using Guid(b576b39688666f7498e1393efa35a1ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7159a8094d1fa8c98bfb51acd3f3e18b') in 0.006144 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004222 seconds.
-  path: Assets/SUHScripts/RX_EXT/EventsAndRequests/RequestSubject.cs
-  artifactKey: Guid(99171b9068b75ba418d8b0ebe43715c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/EventsAndRequests/RequestSubject.cs using Guid(99171b9068b75ba418d8b0ebe43715c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82abdc879d63c98297efe35db1884d7') in 0.006725 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004044 seconds.
+  Time since last request: 0.037456 seconds.
   path: Assets/SUHScripts/Components/State/StateTypeBinder.cs
   artifactKey: Guid(1422d6cf92ffbe1418502d9ee071d293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/StateTypeBinder.cs using Guid(1422d6cf92ffbe1418502d9ee071d293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d60648f54083c42bd54aef7ace91ce') in 0.006470 seconds 
+Start importing Assets/SUHScripts/Components/State/StateTypeBinder.cs using Guid(1422d6cf92ffbe1418502d9ee071d293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2117fcf17e56b786eb8c92fd854e673') in 0.005455 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000695 seconds.
-  path: Assets/SUHScripts/_UNNASSIGNED/SaveSystem
-  artifactKey: Guid(cbdb9bff9dd2bcc46a31036e91854b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/_UNNASSIGNED/SaveSystem using Guid(cbdb9bff9dd2bcc46a31036e91854b7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b3f63267ef3f463b7d2316fe9a53a99') in 0.007630 seconds 
+  Time since last request: 0.024652 seconds.
+  path: Assets/SUHScripts/RX_EXT/_UNNASSIGNED/StaticIDMap.cs
+  artifactKey: Guid(c42cec1866138f142b067b1ed1eb791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SUHScripts/RX_EXT/_UNNASSIGNED/StaticIDMap.cs using Guid(c42cec1866138f142b067b1ed1eb791a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e0ebca145270a58a4891623f7651fb') in 0.005686 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000252 seconds.
-  path: Assets/SUHScripts/Components/ObjectPooling
-  artifactKey: Guid(fa9680bbd20a203448a7413a516c68b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ObjectPooling using Guid(fa9680bbd20a203448a7413a516c68b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11878d2403d24405a994655e46118cf4') in 0.006155 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.009690 seconds.
-  path: Assets/SUHScripts/Components/ReadWrite/FunctionOptionReadWriteValue.cs
-  artifactKey: Guid(89c17e9e51f487d438a44a2149482e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/ReadWrite/FunctionOptionReadWriteValue.cs using Guid(89c17e9e51f487d438a44a2149482e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56167ca04f5fe45a510ee56941d2ad3c') in 0.006021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000984 seconds.
-  path: Assets/SUHScripts/Data/Functional
-  artifactKey: Guid(c369b461813f3cc4996e88c46c0e5586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional using Guid(c369b461813f3cc4996e88c46c0e5586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458755ba1408642a3d579eea6c0dffd1') in 0.006128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/SUHScripts/Data/FTimer
-  artifactKey: Guid(55611935f3d510645aa5a1bfb75fef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/FTimer using Guid(55611935f3d510645aa5a1bfb75fef5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe450d3ad1a19a9cf7ddd5a93682e2a5') in 0.002748 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004172 seconds.
-  path: Assets/SUHScripts/Data/FTimer/FTimerTest/TestTransitionScale.cs
-  artifactKey: Guid(8e0f4564ffaae83458747c8342f36aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/FTimer/FTimerTest/TestTransitionScale.cs using Guid(8e0f4564ffaae83458747c8342f36aaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '388bb270a1b008a45d86df85c91e106b') in 0.006704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.003707 seconds.
+  Time since last request: 0.472545 seconds.
   path: Assets/SUHScripts/Components/State/IStateBinder.cs
   artifactKey: Guid(8d2b0e977500b6d48b8e66b4b9977583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/State/IStateBinder.cs using Guid(8d2b0e977500b6d48b8e66b4b9977583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0147aada3a96e7d2f0c24f06da8455a6') in 0.006862 seconds 
+Start importing Assets/SUHScripts/Components/State/IStateBinder.cs using Guid(8d2b0e977500b6d48b8e66b4b9977583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda2dbb1b5f6de018bc147c276a76993') in 0.005947 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.004169 seconds.
-  path: Assets/SUHScripts/Utility/PositionUtilities.cs
-  artifactKey: Guid(51883390a5305634d9bdfe8fc1335a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Utility/PositionUtilities.cs using Guid(51883390a5305634d9bdfe8fc1335a5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aecfdc703fc36ae198fb796de36a4f6c') in 0.006846 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004209 seconds.
+  Time since last request: 0.024672 seconds.
   path: Assets/SUHScripts/Components/NoiseOffsets/NoiseProcessor3D.cs
   artifactKey: Guid(84db47ad985e4274f882115cf05e606a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Components/NoiseOffsets/NoiseProcessor3D.cs using Guid(84db47ad985e4274f882115cf05e606a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f855f123d119d7f6728b076026ceba3') in 0.006302 seconds 
+Start importing Assets/SUHScripts/Components/NoiseOffsets/NoiseProcessor3D.cs using Guid(84db47ad985e4274f882115cf05e606a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74a0860f0856e371d78d23b9da936d48') in 0.006844 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002492 seconds.
+  Time since last request: 0.004410 seconds.
   path: Assets/SUHScripts/RX_EXT/Collision/2D/M_ColliderObservable2D.cs
   artifactKey: Guid(162a407d85c67bf43848acc330359e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/RX_EXT/Collision/2D/M_ColliderObservable2D.cs using Guid(162a407d85c67bf43848acc330359e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6b70642261fca5f431d407f1a122bf') in 0.009535 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.004612 seconds.
-  path: Assets/SUHScripts/Data/TransformIdentity/TransformOrientationBehaviours.cs
-  artifactKey: Guid(ddd17c73ebca4dd499cf38474594d34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/TransformIdentity/TransformOrientationBehaviours.cs using Guid(ddd17c73ebca4dd499cf38474594d34f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73c8be9d543c687b086b14373f687c4b') in 0.006084 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000969 seconds.
-  path: Assets/SUHScripts/Data/Functional/Types
-  artifactKey: Guid(b7c8816417d139442b6d6a9d4a42472c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SUHScripts/Data/Functional/Types using Guid(b7c8816417d139442b6d6a9d4a42472c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd69f07018d90e163141423f4c18c9ac') in 0.006557 seconds 
-AssetImportWorkerClient::OnTransportError - code=10054 error=An existing connection was forcibly closed by the remote host.
+Start importing Assets/SUHScripts/RX_EXT/Collision/2D/M_ColliderObservable2D.cs using Guid(162a407d85c67bf43848acc330359e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df5bf58a1c420f9684d62f05732510b') in 0.006575 seconds 
